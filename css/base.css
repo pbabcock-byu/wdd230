@@ -43,6 +43,10 @@ ul {
   font-family: var(--link-font);
 }
 
+ul li{
+  padding-bottom: 1%;
+}
+
 /** Center all the content on the page and limit the width as shown. */
 header, main, footer {
     max-width: 700px;
@@ -78,10 +82,12 @@ main {
   /*background-color: var(--secondary-color);*/
   padding-left: 5%;
   padding-top: 2%;
-  padding-bottom: -1%;
+  /* W3C Validater : 	Value Error : padding-bottom -1% negative values are not allowed : -1%
+  Find out why
+  padding-bottom: -1%; */
 }
 
-#footer-copyright {
+#copyright_update {
   text-align: center;
   background-color: var(--primary-color);
   border-radius: 30px;
