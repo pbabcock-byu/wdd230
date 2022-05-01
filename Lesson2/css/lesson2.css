@@ -7,9 +7,11 @@
 :root {
   --primary-color: #E5E5E5;
   --secondary-color: #466EC3;
+  --secondary-text: aqua;
   --accent1-color: #faf9f9;
   --accent2-color: #ebe8e8;
   --primary-shadows: #888888;
+
 
 
 
@@ -34,24 +36,21 @@ h1 {
 h2 {
   font-size: 24px;
 }
+h3 {
+  font-size: 20px;
+}
+
 
 p {
   font-family: var(--paragraph-font);
 }
 
-ul {
-  font-family: var(--link-font);
-}
-
-ul li{
-  padding-bottom: 1%;
-}
 
 /** Center all the content on the page and limit the width as shown. */
 header, main, footer {
-    max-width: 700px;
+    max-width: 1200px;
     margin: 0 auto;
-    align-items: center;/*Not sure i need this here could be under jus header*/
+    /*align-items: center;Not sure i need this here could be under jus header*/
 }
 
 header {
@@ -59,7 +58,7 @@ header {
   border: 1px solid var(--accent1-color);
   padding: .5rem;
   background-color: var(--primary-color);
-  display: grid;
+  /*display: grid;*/
   grid-template-columns: 200px 1fr;
   /*align-items: center;*/
   text-align: center;
@@ -67,24 +66,32 @@ header {
   box-shadow: 5px 10px var(--primary-shadows)
 }
 
-header img {
+main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+
+}
+
+.principle_name {
+  margin: 1rem auto;
+  border: 1px solid var(--accent1-color);
+  padding: .5rem;
+  background-color: var(--secondary-color);
+  color: var(--secondary-text);
+  border-radius: 15px;
+  text-align: center;
+}
+
+.compamy_info {
+  text-align: center;
+  padding-bottom: 2%;
+}
+
+main img {
   width: 100%;
-  padding: 5%;
   height: auto;
 
-}
-
-main {  
-  padding: 1%;
-}
-
-#Main_Li {
-  /*background-color: var(--secondary-color);*/
-  padding-left: 5%;
-  padding-top: 2%;
-  /* W3C Validater : 	Value Error : padding-bottom -1% negative values are not allowed : -1%
-  Find out why
-  padding-bottom: -1%; */
 }
 
 #copyright_update {
@@ -95,3 +102,7 @@ main {
   padding-top: 1%;
   padding-bottom: 1%;
 } 
+
+
+
+
