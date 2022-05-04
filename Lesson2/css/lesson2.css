@@ -43,6 +43,7 @@ h3 {
 
 p {
   font-family: var(--paragraph-font);
+  padding: 1%;
 }
 
 
@@ -70,6 +71,7 @@ main {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-gap: 10px;
+  grid-row: 1/3
 
 }
 
