@@ -18,4 +18,11 @@
   nav ul { display: flex; }
   nav ul li { flex: 1 1 auto; } 
   #copyright_update {font-size: 24px;} 
+  
+  #main_ta{
+    max-width: 1200px;
+  }
+  #main_ta li{
+    text-align: center;
+  }
 }

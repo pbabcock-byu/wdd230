@@ -67,6 +67,8 @@ nav ul li {
 } */
 /*for max and medium only comment out later*/
 
+
+
 nav ul li a {
   justify-content: center;
 	display: flex;
@@ -74,8 +76,9 @@ nav ul li a {
 	padding: 0.75rem;
 	transition: 0.5s;
 }
-.active {
-	color: var(--active-link);
+
+nav a:hover {
+  color: var(--active-link);
 }
 
 
@@ -87,7 +90,7 @@ header, main, footer {
 }
 
 header {
-  margin: 1rem auto;
+
   border: 1px solid var(--accent1-color);
   padding: 1%;
   background-color: var(--primary-color);
@@ -118,6 +121,7 @@ main {
   box-shadow: 1px 5px var(--primary-shadows);
   padding-top: 1%;
   padding-bottom: 1%;
+  margin-bottom: 2rem;
 } 
 
 /*This is for the main info on the Color Scheme page*/
@@ -196,4 +200,32 @@ main {
 }
 #tgp7{
   font-size: 20px;
+}
+
+/* CSS for target audience */
+#main_ta{
+
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  border: 1px solid var(--accent2-color);
+  background-color: #888888;
+  max-width: 500px;
+  text-align: center;
+
+}
+
+
+.tacolumns img {
+  width: 100%;
+  padding: 2%;
+  height: auto;
+}
+.tacolumns h2 {
+  padding-top: 2%;
+}
+
+.tacolumns li{
+  text-justify: left;
+}
+#main_ta li{
+  text-align: left;
 }
