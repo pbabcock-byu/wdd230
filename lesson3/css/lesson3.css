@@ -7,11 +7,10 @@
 :root {
   --primary-color: #E5E5E5;
   --secondary-color: #466EC3;
-  --secondary-text: aqua;
   --accent1-color: #faf9f9;
   --accent2-color: #ebe8e8;
   --primary-shadows: #888888;
-
+  --active-link: yellow;
 
 
 
@@ -36,28 +35,58 @@ h1 {
 h2 {
   font-size: 24px;
 }
-h3 {
-  font-size: 20px;
-}
-
 
 p {
   font-family: var(--paragraph-font);
-  padding: 5%;
+}
+
+nav {
+  
+	background-color: var(--secondary-color);
+	margin: 1.5rem auto;
+	max-width: 500px;
+	/*box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);*/
+}
+nav ul {
+  list-style-type: none;
+	overflow: hidden;
+  padding: 0;
+  font-family: var(--link-font);
+  /*grid-template-columns: 1200px 1fr;*/
+  
+  /*display: flex; if i uncomment this the links will list from right to left*/  
+  
+}
+
+/*not sure this is working 
+nav ul li { 
+  flex: 1 1 auto; 
+} */
+/*for max and medium only comment out later*/
+
+nav ul li a {
+  justify-content: center;
+	display: flex;
+	color: var(--accent1-color);
+	padding: 0.75rem;
+	transition: 0.5s;
+}
+.active {
+	color: var(--active-link);
 }
 
 
-/*Center all the content on the page and limit the width as shown. */
+/** Center all the content on the page and limit the width as shown. */
 header, main, footer {
-    max-width: 1200px;
+    max-width: 500px;
     margin: 0 auto;
-    /*align-items: center;Not sure i need this here could be under jus header*/
+    align-items: center;/*Not sure i need this here could be under jus header*/
 }
 
 header {
   margin: 1rem auto;
   border: 1px solid var(--accent1-color);
-  padding: .5rem;
+  padding: 1%;
   background-color: var(--primary-color);
   /*display: grid;*/
   grid-template-columns: 200px 1fr;
@@ -67,34 +96,17 @@ header {
   box-shadow: 5px 10px var(--primary-shadows)
 }
 
-main {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 10px;
-  grid-row: 1/3
-
-}
-
-.principle_name {
-  margin: 1rem auto;
-  border: 1px solid var(--accent1-color);
-  padding: .5rem;
-  background-color: var(--secondary-color);
-  color: var(--secondary-text);
-  border-radius: 15px;
-  text-align: center;
-}
-
-.compamy_info {
-  text-align: center;
-  padding-bottom: 2%;
-}
-
-main img {
-  width: 100%;
+header img {
+  width: 60%;
+  padding: 0%;
   height: auto;
-
 }
+
+main {  
+  padding: 1%;
+}
+
+
 
 #copyright_update {
   text-align: center;
@@ -104,7 +116,3 @@ main img {
   padding-top: 1%;
   padding-bottom: 1%;
 } 
-
-
-
-
