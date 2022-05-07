@@ -33,18 +33,22 @@ h1 {
   font-size: 34px;
 }
 h2 {
+  font-size: 28px;
+}
+h3{
   font-size: 24px;
 }
 
 p {
   font-family: var(--paragraph-font);
+  font-size: 20px;
 }
 
 nav {
-  
 	background-color: var(--secondary-color);
 	margin: 1.5rem auto;
 	max-width: 500px;
+  border-radius: 10px;
 	/*box-shadow: 0 0 30px rgba(0, 0, 0, 0.9);*/
 }
 nav ul {
@@ -53,7 +57,6 @@ nav ul {
   padding: 0;
   font-family: var(--link-font);
   /*grid-template-columns: 1200px 1fr;*/
-  
   /*display: flex; if i uncomment this the links will list from right to left*/  
   
 }
@@ -116,3 +119,81 @@ main {
   padding-top: 1%;
   padding-bottom: 1%;
 } 
+
+/*This is for the main info on the Color Scheme page*/
+#main_cs{
+  display: grid;
+  border: 1px solid var(--accent2-color);
+  max-width: 500px;
+  text-align: center;
+}
+#main_cs p{
+  padding: 0.75rem;
+  font: bold;
+}
+#csp1 {
+  color: var(--primary-color);
+  background-color:var(--secondary-color);
+}
+#csp2{
+  color: var(--secondary-color);
+  background-color:var(--primary-color);
+}
+#csp3{
+  color: var(--accent1-color);
+  background-color: var(--primary-shadows);
+}
+#csp4{
+  color: var(--accent2-color);
+}
+#csp5{
+  color: var(--primary-shadows);
+  background-color: black;
+}
+#csp6{
+  color: var(--active-link);
+  background-color: var(--secondary-color);
+}
+
+/*This is for the main info on the Color Scheme page*/
+#main_tg{
+  display: grid;
+  border: 1px solid var(--accent2-color);
+  max-width: 500px;
+  text-align: center;
+}
+
+#main_tg h3{ 
+  color: var(--secondary-color);
+  background-color: var(--primary-color);
+}
+
+
+#main_tg p{
+  padding-bottom: 0.75rem;
+  font: bold;
+}
+#tgp1 {
+  font: var(--heading-font);
+  font-size: 20px;
+}
+#tgp2{
+  font: var(--paragraph-font);
+  font-size: 20px;
+}
+#tgp3{
+  font: var(--link-font);
+  font-size: 20px;
+}
+#tgp4{
+  font-size: 34px;
+}
+#tgp5{
+  font-size: 28px;
+}
+#tgp6{
+  font-size: 24px;
+}
+#tgp7{
+  font-size: 20px;
+}
