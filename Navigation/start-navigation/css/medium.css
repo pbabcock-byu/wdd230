@@ -1,0 +1,23 @@
+@media only screen and (min-width: 780px) {
+  nav button {display: none;}
+
+  nav ul {
+    display: flex; /*as screen get bigger menu changes from top down to left right*/
+    margin-left: 2vw; /* removes the space so he menu can line up with the rest*/
+    border-left: 1px solid rgba(0,0,0,0.3);
+    /*justify-content: right; this puts the menu in to the right*/
+    /*justify-content: right; this puts the menu in the center*/
+  }
+
+  nav ul li a{
+    border: none; /* removed the lines that were on top on the menu  */
+    border-right: 1px solid rgba(0,0,0,0.3);
+  }
+
+  /*test to check working*/
+  main {
+   background-color: aqua; 
+  }
+    
+
+}

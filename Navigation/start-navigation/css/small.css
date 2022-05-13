@@ -1,0 +1,48 @@
+/* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
+
+/*----------- apply a natural box layout model to all elements --------------*/
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+nav button{
+  margin: .2rem 2vw;
+  background: transparent;
+  border: none;
+  font-size: 2rem;
+  color: #555;
+}
+
+nav{
+  background-color: #eee;
+}
+
+nav ul{ /*ul is a child of the nav so this will only effect the nav ul's */
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+
+}
+
+nav ul li a{
+  display: block; /* we did this to make the whole area/line of the lines clickable and not just on the words (from inline to block)*/
+  padding: 0.8rem 2vw;
+  text-decoration: none; /* this removed the lines under the links, which is the default setting for anchor */
+  color: #333; /*this changes the default anchor color of the lines*/
+  border-top: 1px solid rgba(0,0,0,0.5);
+  
+}
+
+/*the active needs to be before the hover BECAUSE IT lighter at 0.2 vs 0.3 in order for the different shades to work!!!!!*/
+nav ul li.active a { /* this is where we use the class name(in the htlm) of the active link to changes the background*/
+  background-color: rgba(0,0,0,0.2);
+  color: white;
+}
+
+nav ul li a:hover { /* this changes the background of the nav links when you hover over them*/
+  background-color: rgba(0,0,0,0.3);
+}
+
+
+
+
+
