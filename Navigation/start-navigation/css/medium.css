@@ -1,7 +1,7 @@
-@media only screen and (min-width: 780px) {
+@media only screen and (min-width: 560px) {
   nav button {display: none;}
 
-  nav ul {
+  nav ul#primaryNav{ /*adding an css assigned to an id is more powerful than adding a class */ 
     display: flex; /*as screen get bigger menu changes from top down to left right*/
     margin-left: 2vw; /* removes the space so he menu can line up with the rest*/
     border-left: 1px solid rgba(0,0,0,0.3);

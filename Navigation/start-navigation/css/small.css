@@ -6,10 +6,10 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 nav button{
   margin: .2rem 2vw;
-  background: transparent;
-  border: none;
-  font-size: 2rem;
-  color: #555;
+  /*background: transparent;
+ border: none;*/
+  font-size: 2rem; /* recommended button size for cell */
+  color: #555; 
 }
 
 nav{
@@ -42,7 +42,17 @@ nav ul li a:hover { /* this changes the background of the nav links when you hov
   background-color: rgba(0,0,0,0.3);
 }
 
+nav ul {display: none;}
+nav ul.open{display:block;}
 
+/* this is for the button open to be the lines closed to have the X */
+/*nth-child alows you to access the diffent spans in the html <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button> */
+/* span:nth-child(1) is <span>&#9776;</span>*/
+/* span:nth-child(2) is <span>X</span>*/
 
+#hamburgerBtn span:nth-child(1) {display: block;}
+#hamburgerBtn span:nth-child(2) {display: none;} /* <span>X</span> does not show*/
 
-
+/* now i added the class of open i can hide the 3 lines and display the x*/
+#hamburgerBtn.open span:nth-child(1) {display: none;} /* <span>X</span> does not show*/
+#hamburgerBtn.open span:nth-child(2) {display: block;}

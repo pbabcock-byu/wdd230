@@ -37,13 +37,22 @@
 
 
     <!-- NAVIGATION HERE -->
+
     <nav>
-        <button>&#9776;</button> <!-- this &#9776; creates the 3lines on the menu-->
-        <ul>
+        <!--this &#9776;creates the 3lines on the menu-->
+        <!--<button id="hamburgerBtn">&#9776;</button> good normal button-->
+
+        <!--Add X here so when its open an X appears to close, check the js for addition code to make this work -->
+        <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button>
+
+        <ul id="primaryNav">
             <li><a href="#">Home</a></li>
             <!-- we are adding a class name here so that when your on the page it highlights the name -->
             <li class="active"><a href="#">Products</a></li>
-
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Block</a></li>
+            <li><a href="#">blog</a></li>
             <li><a href="#">Location</a></li>
             <li><a href="#">Contact</a></li>
         </ul>
