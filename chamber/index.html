@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kempton Park Chamber of Commerce</title>
+  <meta name="description" content="The Chamber of Commerce Project is a website project that will be used throughout the course as a learning project. 
+    The goal of the project is to meet the course outcomes and objectives through sequential module content and directed development specifications. 
+    You will select the municipality or town, such as your home town, to be the subject of the site. The project provides opportunities to apply the 
+    concepts presented in the weeks by planning, designing, developing, and maintaining a chamber site related site. This project will prepare you with a 
+    foundation upon which to complete the term project at the end of the semester.">
+  <link rel="stylesheet" href="css/normalize.css" type="text/css">
+  <link rel="stylesheet" href="css/base.css" type="text/css">
+  <link rel="stylesheet" href="css/medium.css" type="text/css">
+  <link rel="stylesheet" href="css/large.css" type="text/css">
+
+
+</head>
+
+<body>
+  <header>
+    <div class="logo">
+      <img src="images/za-gt-kp2.jpg" alt="Chambers Logo">
+    </div>
+    <section class="heading">
+      <h1>Kempton Park <span>Chamber of Commerce</span></h1>
+    </section>
+
+    <nav>
+      <!--this &#9776;creates the 3lines on the menu-->
+      <!--<button id="hamburgerBtn">&#9776;</button> good normal button-->
+      <!--Add X here so when its open an X appears to close, check the js for addition code to make this work -->
+      <button id="hamburgerBtn"><span>&#9776; Menu</span><span>X Close</span></button>
+
+      <ul id="primaryNav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Discover</a></li>
+        <li><a href="#">Directory</a></li>
+        <li><a href="#">Join</a></li>
+        <li><a href="#">Contact</a></li>
+        <!-- we are adding a class name here so that when your on the page it highlights the name
+        <li class="active"><a href="#">Products</a></li> -->
+      </ul>
+      <div class="SocialMediaLinks">
+        <a href="https://www.facebook.com/"></a><img src="images/fbsmall.jpg" alt="Facebook"></a>
+        <a href="https://www.linkedin.com/"></a><img src="images/linkedinsmall.jpg" alt="LinkedIn"></a>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="callToAction">Hero with site name and call to action</div>
+    <div class="events">Things to do in out home town</div>
+    <div class="weather">Weather</div>
+    <div class="join">Join</div>
+    <div class="newsReleases">Latest Updates from .....</div>
+
+    <div class="threeImageMain">
+      <div class="spotLightOne">Spot Light 1</div>
+      <div class="spotLightTwo">Spot Light 2</div>
+      <div class="spotLightThree">Spot Light 3</div>
+    </div>
+  </main>
+  <footer>
+    <br>
+    <div id="copyright_update">
+      <img src="images/za-gt-kp2.jpg" alt="Kempton Park city flag.">
+      <p id="currentyear"></p>
+      <p> Last Updated: <span id="lastupdate"> </span> </p>
+    </div>
+  </footer>
+  <script src="js/footer.js"></script>
+  </footer>
+</body>
+
+</html>

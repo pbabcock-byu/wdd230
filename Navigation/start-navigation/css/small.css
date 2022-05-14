@@ -56,3 +56,4 @@ nav ul.open{display:block;}
 /* now i added the class of open i can hide the 3 lines and display the x*/
 #hamburgerBtn.open span:nth-child(1) {display: none;} /* <span>X</span> does not show*/
 #hamburgerBtn.open span:nth-child(2) {display: block;}
+

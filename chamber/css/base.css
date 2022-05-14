@@ -1,0 +1,47 @@
+:root {
+  --primary-color: #E5E5E5;
+  --secondary-color: #466EC3;
+  --accent1-color: #faf9f9;
+  --accent2-color: #ebe8e8;
+  --primary-shadows: #888888;
+  --active-link: yellow;
+
+
+
+  /* Possible Fonts to use on page */
+  --heading-font: "Merriweather", serif;
+  /*--heading-font: "Verdana", Geneva, sans-serif;  */
+  --paragraph-font: "Georgia", Times;
+  --link-font: "Verdana", Geneva, sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+}
+h1 {
+  font-size: 34px;
+}
+h2 {
+  font-size: 28px;
+}
+h3{
+  font-size: 24px;
+}
+
+p {
+  font-family: var(--paragraph-font);
+  font-size: 20px;
+}
+
+
+
+/*footer info */
+#copyright_update {
+  text-align: center;
+  background-color: var(--primary-color);
+  border-radius: 30px;
+  box-shadow: 1px 5px var(--primary-shadows);
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-bottom: 2rem;
+} 
