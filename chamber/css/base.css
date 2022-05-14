@@ -107,6 +107,7 @@ footer {
 .footmaps {
   text-align: center;
   margin: auto;
+  color: #333;
 }
 .copyrightupdate {
   display: inline;
