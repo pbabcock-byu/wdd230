@@ -1,0 +1,35 @@
+@media only screen and (min-width: 560px) {
+  header {
+    display: grid;
+    border: 1px solid var(--accent1-color);
+    padding: 1%;
+    /*background-color: var(--primary-color);*/
+    background-color:yellow;
+    grid-template-columns: 1fr 2fr 0.5fr 1fr;
+    /*align-items: center;*/
+    text-align: center;
+    border-radius: 25px;
+    box-shadow: 5px 10px var(--primary-shadows)
+  }
+  footer {
+    display: grid;
+  } 
+  .SocialMediaLinks {
+    display: flex;
+    width: 50px;
+    height: 50px;
+    padding-bottom: 2%;
+    margin-left: 0;
+  }
+
+  main{
+    padding: 3%;
+  }
+  .SocialMediaLinks {
+    display: block;
+    margin:unset;
+  }
+
+
+
+}

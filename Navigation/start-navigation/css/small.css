@@ -31,7 +31,6 @@ nav ul li a{
   border-top: 1px solid rgba(0,0,0,0.5);
   
 }
-
 /*the active needs to be before the hover BECAUSE IT lighter at 0.2 vs 0.3 in order for the different shades to work!!!!!*/
 nav ul li.active a { /* this is where we use the class name(in the htlm) of the active link to changes the background*/
   background-color: rgba(0,0,0,0.2);
