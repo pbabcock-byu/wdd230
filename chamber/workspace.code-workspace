@@ -1,0 +1,22 @@
+{
+	"folders": [
+		{
+			"name": "wdd230",
+			"path": ".."
+		},
+		{
+			"name": "CSE121B",
+			"path": "..\\..\\..\\..\\CSE 121B - April 22\\CSE121B"
+		},
+		{
+			"name": "cse210",
+			"path": "..\\..\\..\\..\\CSE 210 Programming with Classes Apr 2022\\Code\\cse210"
+		},
+		{
+			"path": "..\\..\\..\\..\\..\\OneDrive\\Personal\\Studies\\WDD 130 Web Fundamentals"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "wdd230"
+	}
+}
