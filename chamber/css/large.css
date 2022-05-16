@@ -4,7 +4,7 @@
   }
   header, main, footer {
     max-width: 1050px;
-    margin: 1 auto;
+    margin: 1px auto;
   }
   button#hamburgerbtn {
     display: none;
@@ -88,8 +88,6 @@
     display: block;
   }
 
-
-
   /* turn on large copyright, turn off reset */
   .copyrightupdatesmall {
     display: none;
@@ -103,7 +101,4 @@
     display: block;
     text-align: center;
   }
-
-
-
 }
