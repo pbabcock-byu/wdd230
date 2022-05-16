@@ -3,10 +3,10 @@
   --secondary-color: #466EC3;
   --accent1-color: #faf9f9;
   --accent2-color: #ebe8e8;
-  --primary-shadows: #888888;
+  --primary-dark: #888888;
   --active-link: yellow;
-
-
+  --main-text:black;
+  --primary-boarder: black;
 
   /* Possible Fonts to use on page */
   --heading-font: "Merriweather", serif;
@@ -15,172 +15,217 @@
   --link-font: "Verdana", Geneva, sans-serif;
 }
 
+/* relook at thisry-n
+body {
+  background-color: var(--primary-dark);
+} */
+
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
+  color: var(--main-text);
 }
 h1 {
-  font-size: 34px;
+  font-size: 30px;
 }
 h2 {
-  font-size: 28px;
+  font-size: 22px;
 }
 h3{
-  font-size: 24px;
+  font-size: 16px;
 }
 
-p {
+p, a, li, button {
   font-family: var(--paragraph-font);
-  font-size: 20px;
 }
 
-main{
-  padding: 5%;
+header, main, footer {
+  max-width: 560px;
+  margin: 0 auto;
+  padding: 1%;
+  border: 1px solid var(--primary-boarder);
+  background-color: var(--primary-dark);
+  border-radius: 25px;
 }
 
 header {
-  border: 1px solid var(--accent1-color);
-  padding: 1%;
-  background-color: var(--primary-color);
-  /*grid-template-columns: 2fr 3fr 0.5fr 1fr;
-  align-items: center;*/
-  text-align: center;
-  border-radius: 25px;
-  box-shadow: 5px 10px var(--primary-shadows);
+  margin-top: 1%;
 }
-
-.logo {
-  grid-column: 1 / 1;
-  grid-row: 1;
-}
-.mainheading {
-  grid-column: 2 / 3;
-}
-.SocialMediaLinks {
-  grid-column: 3 / 3;
-  display: flex;
-  width: 50px;
-  height: 50px;
-  padding-bottom: 2%;
-  margin: auto;
-}
-.subheading {
-  font-size: 24px;
-	letter-spacing: 1pt;
-	color: var(--secondary-color)
-}
-
-.headdate {
-  display: inline;
-  grid-column: 1 / 6;
-  grid-row: 2;
-  text-align: center;
-  border: 1px solid rgba(0,0,0,0.5);
-  background-color: var(--accent2-color);
-  margin-bottom: 0%;
-}
-/*footer info */
 footer {
-  background-color: var(--primary-color);
-  border-radius: 30px;
-  box-shadow: 1px 5px var(--primary-shadows);
-  border: 1px solid var(--accent1-color);
-  padding: 1%;
-  text-align: center;
-
-
-
-} 
-
-.footeraddress {
-  grid-column: 2 / 2;
-  grid-row: 1;
-  text-align: center;
-  padding: 2%;
-}
-.footercontact {
-  grid-column: 4 / 3;
-  grid-row: 1;
-  text-align: center;
-  margin: auto;
-  padding: 2%;
-}
-.footmaps {
-  text-align: center;
-  margin: auto;
-  color: #333;
-}
-.copyrightupdate {
-  display: inline;
-  grid-column: 1 / 6;
-  grid-row: 2;
-  text-align: center;
-}
-
-
-
-
-/*naviagate info */
-nav button{
-  margin: .2rem 2vw;
-  /*background: transparent;
- border: none;*/
-  font-size: 2rem; /* recommended button size for cell */
-  color: #555; 
-}
-
-
-
-nav ul{ /*ul is a child of the nav so this will only effect the nav ul's */
-  list-style-type: none;
-  padding: 0;
-  margin: 0;
-
-}
-
-nav ul li a{
-  display: block; /* we did this to make the whole area/line of the lines clickable and not just on the words (from inline to block)*/
-  padding: 0.8rem 2vw;
-  text-decoration: none; /* this removed the lines under the links, which is the default setting for anchor */
-  color: #333; /*this changes the default anchor color of the lines*/
-  border-top: 1px solid rgba(0,0,0,0.5);
-  
-}
-
-/*the active needs to be before the hover BECAUSE IT lighter at 0.2 vs 0.3 in order for the different shades to work!!!!!*/
-nav ul li.active a { /* this is where we use the class name(in the htlm) of the active link to changes the background*/
-  background-color: rgba(0,0,0,0.2);
-  color: white;
-}
-
-nav ul li a:hover { /* this changes the background of the nav links when you hover over them*/
-  background-color: rgba(0,0,0,0.3);
-}
-
-nav ul {display: none;}
-nav ul.open{display:block;}
-
-/* this is for the button open to be the lines closed to have the X */
-/*nth-child alows you to access the diffent spans in the html <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button> */
-/* span:nth-child(1) is <span>&#9776;</span>*/
-/* span:nth-child(2) is <span>X</span>*/
-
-#hamburgerBtn span:nth-child(1) {display: block;}
-#hamburgerBtn span:nth-child(2) {display: none;} /* <span>X</span> does not show*/
-
-#hamburgerBtn {
   margin-bottom: 1%;
 }
 
-/* now i added the class of open i can hide the 3 lines and display the x*/
-#hamburgerBtn.open span:nth-child(1) {display: none;} /* <span>X</span> does not show*/
-#hamburgerBtn.open span:nth-child(2) {display: block;}
+#hamburgernav a{
+  display: block;
+  background-color: rgba(220, 220, 220, 0.5);
+  color: var(--main-text);
+  text-decoration: none;
+  padding: 1rem;
+  border-bottom: 1px solid  rgba(0,0,0,0.5);
+}
+
+#hamburgernav a:hover {
+  background-color: rgba(0,0,0,0.1);
+}
+
+nav ul, #hamburgernav {
+  text-align: center;
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  border-top: 1px solid rgba(0,0,0,0.5);
+}
+
+main {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-rows: 0.5fr 2fr 0.5fr 3fr 1fr;
+  background-color: var(--accent1-color)
+}
+
+.headings {
+  text-align: center;
+}
+main section, main section div {
+  background-color: rgba(0,0,0,0.2);
+  border: 1px solid rgba(0,0,0,0.5);
+
+}
 
 
-/*
-nav ul#primaryNav{ adding an css assigned to an id is more powerful than adding a class 
-  display: flex; as screen get bigger menu changes from top down to left right
-  margin-left: 2vw; removes the space so he menu can line up with the rest
-  border-left: 1px solid rgba(0,0,0,0.3);
-      justify-content: right; this puts the menu in to the right
-    justify-content: right; this puts the menu in the center
-  }*/
+#threeimagemains {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+
+}
+#spotLightThree {
+  display: none;
+}
+
+header div {
+  margin-bottom: 1rem;
+}
+
+header div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerbuild {
+  display: block;
+  margin: 0;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+header button {
+  color: white;
+  font-size: 2rem;
+  margin-top: 1.5rem;
+  background-color: var(--secondary-color);
+  border: 1px solid rgba(0,0,0,0.5);
+  width: 3rem;
+  height: 3rem;
+}
+
+header button:hover {
+  background-color: #1D3461;
+}
+
+#threeImageMain {
+  display: flex;
+  gap: 0.25rem;
+}
+#spotLightThree {
+  display: none;
+}
+
+
+#hamburgernav.open {
+  display: block;
+}
+
+
+
+
+/* this is for the button open to be the lines closed to have the X */
+/*nth-child alows you to access the diffent spans in the html <button id="hamburgerBtn"><span>&#9776;</span><span>X</span></button> */
+#hamburgerbtn.open span:nth-child(1) {display: none;}
+#hamburgerbtn.open span:nth-child(2) {display: block;}
+#hamburgerbtn span:nth-child(1) {display: block;}
+#hamburgerbtn span:nth-child(2) {display: none;} /* <span>X</span> does not show*/
+
+
+
+
+.logo img {
+  width: 10rem;
+}
+
+.logo { 
+  display: flex;
+  align-items: center;
+}
+
+.currentdate {
+  background-color: var(--accent2-color);
+  padding: 1rem;
+  border: 1px solid rgba(0,0,0,0.5);
+  text-align: center;
+}
+
+.social {
+  margin-top: 1.5rem;
+}
+.social img {
+  width: 3rem;
+}
+
+.footercontact {
+  text-align: center;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+
+.footerlogo {
+  display: block;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.footerheadings {
+  display: block;
+}
+.footerlogo img {
+  width: 12.5rem;
+}
+.footmaps img{
+  width: 2rem;
+}
+.footercontact img{
+  width: 2rem;
+}
+
+.copyrightupdatesmall, .copyrightupdatemedium, .copyrightupdatelarge{
+  display: block;
+  text-align: center;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(0,0,0,0.5);
+}
+.copyrightupdatesmall {
+  display: block;
+  text-align: center;
+}
+.copyrightupdatemedium {
+  display: none;
+  text-align: center;
+}
+.copyrightupdatelarge {
+  display: none;
+  text-align: center;
+}

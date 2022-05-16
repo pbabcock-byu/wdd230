@@ -1,17 +1,22 @@
-const format = {year: "numeric"}
-const currentyear = new Date().toLocaleDateString("en-US",format);
+const now = new Date();
+const fullDate = new Intl.DateTimeFormat("en-UK", {dateStyle: "full"}).format(now);
+const currentYear = now.getFullYear();
 
-/* This adds the copyright symbol and will update to the current year */
-document.getElementById("currentyear").innerHTML= `&copy; ${currentyear} Kempton Park Chamber .:|:. Peter Babcock .:|:.  WDD 230  .:|:.  Last Updated: ${document.lastModified}`;
+document.querySelector(".currentdate").innerHTML = fullDate;
+document.querySelector("#copyrightupdatesmall_year").innerHTML = currentYear;
+document.getElementById("copyrightupdatesmall_lastup").innerHTML = document.lastModified;
+document.querySelector("#copyrightupdatemedium_year").innerHTML = currentYear;
+document.getElementById("copyrightupdatemedium_lastup").innerHTML = document.lastModified;
+document.querySelector("#copyrightupdatelarge_year").innerHTML = currentYear;
+document.getElementById("copyrightupdatelarge_lastup").innerHTML = document.lastModified;
 
-/*This adds the date and time when the document was last modified
-document.getElementById("lastupdate").innerHTML = document.lastModified;*/
 
-/* for menu bar */
 function toggleMenu() {
-  document.getElementById("primaryNav").classList.toggle("open");
-  document.getElementById("hamburgerBtn").classList.toggle("open");
+    document.getElementById("hamburgernav").classList.toggle("open");
+    document.getElementById("hamburgerbtn").classList.toggle("open");
 }
 
-const x = document.getElementById('hamburgerBtn')
-x.onclick = toggleMenu;
+const x = document.getElementById("hamburgerbtn");
+
+x.onclick = toggleMenu; 
+

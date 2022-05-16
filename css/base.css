@@ -74,6 +74,13 @@ header img {
 
 }
 
+.current-date {
+  background-color: #1F487E;
+  padding: 1rem;
+  border: 1px solid #376996;
+  text-align: center;
+}
+
 main {  
   padding: 1%;
 }
