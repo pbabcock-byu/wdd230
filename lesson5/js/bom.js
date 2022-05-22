@@ -33,12 +33,13 @@ function submitbutton() {
 
     newbutton.addEventListener('click', () => {
       sect.removeChild(para);
+      document.getElementById('favchap').focus();
     });
+    document.getElementById('favchap').focus();
     
-    favchap.focus();
   }  
 
-
+  
 }
 
 
