@@ -46,17 +46,18 @@ header, main, footer {
   background-color: var(--primary-dark);
   border-radius: 25px;
 }
+
 #chambermeeting {
+  display:block;
   max-width: 560px;
   margin: 0 auto;
   padding: 1%;
   border: 1px solid var(--primary-boarder);
   background-color: var(--secondary-color);
-  color: var(--accent1-color);
   border-radius: 25px;
-  text-align: center;
-  
 }
+
+
 
 
 header {

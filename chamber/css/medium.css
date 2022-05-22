@@ -25,7 +25,9 @@
     max-width: 730px;
     margin: 1px auto;
   }
-
+  #chambermeeting {
+    max-width: 730px;
+  }
   #weather .elfsight-app-b95b4b66-7cb2-4af2-91a0-4ead34acbc01{
     
     margin-left: 10%;

@@ -6,6 +6,9 @@
     max-width: 1050px;
     margin: 1px auto;
   }
+  #chambermeeting {
+    max-width: 1050px;
+  }
   button#hamburgerbtn {
     display: none;
   }
