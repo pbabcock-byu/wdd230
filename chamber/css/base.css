@@ -233,15 +233,6 @@ header div {
   justify-content: space-between;
 }
 
-.footerbuild {
-  display: block;
-  margin: 0;
-  margin-bottom: 1rem;
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
-  align-items: center;
-}
 
 
 header button {
@@ -305,6 +296,32 @@ header button:hover {
 }
 .social img {
   width: 3rem;
+}
+
+
+.footerbuild {
+  display: block;
+  margin: 0;
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footerbuild a:link {
+  color: var(--main-text);
+  background-color: transparent;
+  text-decoration: none;
+
+}
+.footerbuild a:visited {
+  color: var(--active-link);
+  background-color: transparent;
+  text-decoration: none;
+}
+.footerbuild a:hover {
+  background-color: rgba(0,0,0,0.1);
 }
 
 .footercontact {
