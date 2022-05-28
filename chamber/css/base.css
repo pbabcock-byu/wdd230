@@ -180,6 +180,12 @@ main section, main section div {
   padding: 1rem;
   }
   
+#weather div, h4 {
+  text-align: center;
+
+}
+
+
 #weather  {
     padding-bottom: 1rem;
 }

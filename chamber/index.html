@@ -21,9 +21,9 @@
   <!--<link href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato" rel="stylesheet"> -->
   <link rel="icon" href="kp_icon.GIF" type="image/x-icon">
 
-  <!-- Script for weather widget 
+  <!-- Script for weather widget (this caused css errors)
   <script src="https://apps.elfsight.com/p/platform.js" defer></script>-->
-
+  <script src="js/windchill.js" defer></script>
 </head>
 
 
@@ -78,8 +78,26 @@
         <a href="#">
           <h4>Join the Chamber</h4>
         </a>
-        <img src="images/tablemountain.jpg" Alt="A view of Table Mountain">
-        <img class="imgcallToActions" src="images/Cape-Chamber-of-Commerce.jpg" Alt="TThe Cape Chamber">
+        <!--wdd230-large-->
+        <picture class="photoa">
+          <!--  Pictute and source element here -->
+          <!-- if the images is 50% of the page with the image must be 50% of the media query width
+              if its 100% image it must match the media query-->
+          <source media="(max-width: 375px)" srcset="images/wdd230-small.jpg"> <!-- test on cell view -->
+          <source media="(max-width: 780px)" srcset="images/wdd230-medium.jpg">
+          <source media="(max-width: 1100px)" srcset="images/wdd230-large.jpg">
+          <img src="images/wdd230-large.jpg" alt="church">
+
+        </picture>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc turpis ligula, laoreet quis facilisis vitae,
+          condimentum quis mi. Duis mollis viverra velit, at gravida lacus lobortis pretium. Maecenas tellus dolor,
+          semper id rhoncus nec, finibus non sem. Integer elit enim, iaculis at dictum facilisis, euismod id diam.
+          Quisque et molestie lacus. Pellentesque fermentum vel sem ut pharetra. Vestibulum sed varius orci. In vel
+          lorem lacus. Aliquam lacus arcu, ullamcorper a neque id, sagittis consequat magna. Praesent vestibulum quam
+          metus, a accumsan purus aliquet sit amet. Aliquam faucibus justo sed consectetur condimentum. Vestibulum
+        </p>
+        <!--<img src="images/tablemountain1100 Alt="A view of Table Mountain">
+        <img class="imgcallToActions" src="images/Cape-Chamber-of-Commerce.jpg" Alt="TThe Cape Chamber">-->
       </div>
     </section>
     <section id="events">
@@ -89,7 +107,20 @@
     </section>
     <section id="weather">
       <h3>Today's Weather</h3>
+
+
+      <h4>Current Temperature <br> <span id="temperature">45</span> °F </h4>
       <div class="elfsight-app-b95b4b66-7cb2-4af2-91a0-4ead34acbc01"></div>
+      <hr>
+      <div class="windspeedClass">
+        <p>Wind Speed: <span id="windspeed">12</span> MPH</p>
+      </div>
+      <br>
+      <div class="windchillClass">
+        <p>Wind Chill: <span id="windchill"></span> °F </p>
+
+      </div>
+
     </section>
     <section id="join">
       <a href="#">
@@ -112,19 +143,19 @@
 
         <h3>10 Best Things to Do in Cape Town</h3>
 
-        <img class="sl1image" src="images/hotels_com_main.webp" Alt="Hotels.Com">
+        <img class="sl1image" src="images/hotels_com_main500.jpg" Alt="Hotels.Com">
 
       </div>
       <div id="spotLightTwo">
         <h3>Visit Robben Island Today</h3>
-        <img class="sl2image" src="images/robbinislandpic.jpg" Alt="Robben Island Ad">
+        <img class="sl2image" src="images/robbinislandpic500.jpg" Alt="Robben Island Ad">
         <img class="sl21image" src="images/robben-island-madiba.webp" Alt="Images of Madiba">
 
       </div>
       <div id="spotLightThree">
         <!--<h3>Where is the best Graduate school in the country ???</h3>-->
-        <img class="sl3image" src="images/gsbimage.jpg" Alt="GSB Ad">
-        <img class="sl3image" src="images/gsbct.jpeg" Alt="GSB school">
+        <img class="sl3image" src="images/gsbimage1100.jpg" Alt="GSB Ad">
+        <img class="sl3image" src="images/gsbct500.jpg" Alt="GSB school">
       </div>
     </section>
   </main>

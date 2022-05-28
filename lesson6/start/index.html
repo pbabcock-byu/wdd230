@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Fill Me In">
+    <meta name="author" content="John Doe">
+
+    <!-- This start file was build by Paul Cheney  -->
+    <title>HTML5 Start Site by Paul Cheney</title>
+
+    <!-- TELLS PHONES NOT TO LIE ABOUT THEIR WIDTH & stops the font from enlarging when a phone is turned sideways-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+
+
+
+    <!-- STYLE SHEETS -->
+    <link href="css/normalize.css" rel="stylesheet">
+    <!-- phone-default -->
+    <link href="css/small.css" rel="stylesheet">
+    <!-- enhance-tablet -->
+    <link href="css/medium.css" rel="stylesheet">
+    <!-- enhance-desktop -->
+    <link href="css/large.css" rel="stylesheet">
+
+
+
+</head>
+
+<body>
+    <!-- HEADER HERE -->
+    <header class="clearfix">
+        <figure class="logo">
+            <img src="images/logo0.png" alt="logo"
+                srcset="images/logo1.png 1x, images/logo2.png 2x,images/logo3.png 3x">
+        </figure>
+        <h1>Company Name Here</h1>
+
+        <h2>Possible Slogan or Tagline</h2>
+    </header>
+
+
+    <!-- NAVIGATION HERE -->
+    <nav class="clearfix">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Products</a></li>
+            <li><a href="#">Location</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+
+    <!-- CONTENT HERE -->
+    <main class="clearfix">
+        <h1>Products</h1>
+
+        <figure class="myphoto">
+            <!--  Figure and img element here -->
+            <img src="images/golgotha.jpg" alt="golgotha" sizes="50vw" srcset="images/golgotha200.jpg 200w,
+                images/golgotha500.jpg 500w, images/golgotha800.jpg 800w,
+                images/golgotha1100.jpg 1100w">
+            <figcaption>The Garden Tomb</figcaption>
+        </figure>
+
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc turpis ligula, laoreet quis facilisis vitae,
+            condimentum quis mi. Duis mollis viverra velit, at gravida lacus lobortis pretium. Maecenas tellus dolor,
+            semper id rhoncus nec, finibus non sem. Integer elit enim, iaculis at dictum facilisis, euismod id diam.
+            Quisque et molestie lacus. Pellentesque fermentum vel sem ut pharetra. Vestibulum sed varius orci. In vel
+            lorem lacus. Aliquam lacus arcu, ullamcorper a neque id, sagittis consequat magna. Praesent vestibulum quam
+            metus, a accumsan purus aliquet sit amet. Aliquam faucibus justo sed consectetur condimentum. Vestibulum
+            nisi urna, tristique id hendrerit at, lacinia at metus.
+
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis molestie luctus tortor. Integer justo orci,
+            sollicitudin non egestas id, malesuada non lectus. Sed id interdum quam. Nam porttitor accumsan mattis.
+            Donec vehicula et orci id scelerisque. Morbi vitae augue nunc. Proin tempor vulputate quam, at suscipit mi
+            aliquam eu. Nulla vehicula sem sit amet urna fringilla efficitur. Sed tincidunt massa eget nibh maximus,
+            eget mattis tortor bibendum. Nullam a euismod elit, sit amet pulvinar eros. Quisque suscipit commodo dolor
+            quis cursus. Nulla quis lacinia massa. Mauris at iaculis nulla. </p>
+        <picture class="photoa">
+            <!--  Pictute and source element here -->
+            <!-- if the images is 50% of the page with the image must be 50% of the media query width
+                if its 100% image it must match the media query-->
+            <source media="(max-width: 200px" srcset="images/golgotha200.jpg"> <!-- test on cell view -->
+            <source media="(max-width: 500px" srcset="images/golgotha500.jpg">
+            <source media="(max-width: 800px" srcset="images/golgotha800.jpg">
+            <img src="images/golgotha1100.jpg" alt="church">
+            <div>Church of the Beatitudes photo A</div>
+        </picture>
+
+        <picture class="photob">
+            <!-- if the images is 50% of the page with the image must be 50% of the media query width
+            if its 100% image it must match the media query-->
+            <source media="(max-width: 400px" srcset="images/golgotha200.jpg">
+            <source media="(max-width: 1000px" srcset="images/golgotha500.jpg">
+            <source media="(max-width: 1600px" srcset="images/golgotha800.jpg">
+            <img src="images/golgotha.jpg" alt="church">
+            <div>Church of the Beatitudes photo B</div>
+        </picture>
+    </main>
+
+    <!-- FOOTER HERE -->
+    <footer>
+        &copy; 201x &bull; Paul Cheney &bull; 123-555-6789
+    </footer>
+
+</body>
+
+</html>
