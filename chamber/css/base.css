@@ -154,7 +154,7 @@ nav ul, #hamburgernav {
 main {
   display: grid;
   gap: 0.5rem;
-  grid-template-rows: 1fr 1fr 0.5fr 0.5fr;
+  grid-template-rows: 1fr 0.1fr 0.5fr 0.5fr;
   background-color: var(--accent1-color)
 }
 
@@ -208,7 +208,7 @@ main section, main section div {
   margin-right: 25%;
 }
 
-#spotLightOne .sl1image, .sl2image, .sl3image, .newsrelease {
+#spotLightOne .sl1image, .sl2image, .sl21image, .sl3image, .newsrelease {
   width: 100%;
 
 }

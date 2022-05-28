@@ -93,6 +93,10 @@
     display: block;
   }
 
+  #spotLightTwo .sl21image{
+    visibility: visible;
+  }
+
   /* turn on large copyright, turn off reset */
   .copyrightupdatesmall {
     display: none;
