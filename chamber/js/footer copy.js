@@ -30,9 +30,3 @@ else {
     chambermeeting.style.display = "none";
 }
 
-/*if click on the X in the banner is closes it */
-const closems = document.querySelector("#closems");
-
-closems.addEventListener("click", () => {
-    chambermeeting.style.display = "none";
-});

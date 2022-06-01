@@ -9,6 +9,10 @@
   #chambermeeting {
     max-width: 1050px;
   }
+    #chambermeeting h2 {
+    animation: marquee 15s linear infinite;
+  }
+
   button#hamburgerbtn {
     display: none;
   }
@@ -16,9 +20,11 @@
     display: none;
   }
 
-  nav ul#primarynav {
+ #primarynav {
     display: flex;
     border-top: none;
+    border-bottom: none;
+    border: none;
     padding-top: 2.8%;
     font-size: 14px;
   }

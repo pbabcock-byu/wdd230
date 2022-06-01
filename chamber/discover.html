@@ -34,8 +34,6 @@
 
   <header>
 
-
-
     <div>
       <div class=" logo">
         <img src="images/za-gt-kp2.jpg" alt="Chambers Logo">
@@ -46,8 +44,8 @@
       </div>
       <nav>
         <ul id="primarynav">
-          <li><a class="activebutton" href="index.html">Home</a></li>
-          <li><a href="discover.html">Discover</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a class="activebutton" href="discover.html">Discover</a></li>
           <li><a href="#">Directory</a></li>
           <li><a href="#">Join</a></li>
           <li><a href="#">Contact</a></li>
@@ -60,109 +58,40 @@
       <button id="hamburgerbtn"><span>&#9776;</span><span>X</span></button>
     </div>
     <ul id="hamburgernav">
-      <li><a class="activebutton" href="index.html">Home</a></li>
-      <li><a href="discover.html">Discover</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a class="activebutton" href="discover.html">Discover</a></li>
       <li><a href="#">Directory</a></li>
       <li><a href="#">Join</a></li>
       <li><a href="#">Contact</a></li>
     </ul>
     <H2 class="currentdate"></h2>
-    <section id="chambermeeting">
-      <div>
-        <h2>🤝🏼 Come join us for the chamber meet and greet Wednesday at 7:00 p.m.</h2>
-        <button id="closems">X</button>
-      </div>
-    </section>
+
   </header>
 
 
   <main>
 
-    <section id="callToAction">
-      <div>
-        <a href="#">
-          <h4>Join the Chamber</h4>
-        </a>
-        <!--wdd230-large-->
-        <picture class="photoa">
-          <!--  Pictute and source element here -->
-          <!-- if the images is 50% of the page with the image must be 50% of the media query width
-              if its 100% image it must match the media query-->
-          <source media="(max-width: 375px)" srcset="images/wdd230-small.jpg"> <!-- test on cell view -->
-          <source media="(max-width: 780px)" srcset="images/wdd230-medium.jpg">
-          <source media="(max-width: 1100px)" srcset="images/wdd230-large.jpg">
-          <img src="images/wdd230-large.jpg" alt="church">
-
-        </picture>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc turpis ligula, laoreet quis facilisis vitae,
-          condimentum quis mi. Duis mollis viverra velit, at gravida lacus lobortis pretium. Maecenas tellus dolor,
-          semper id rhoncus nec, finibus non sem. Integer elit enim, iaculis at dictum facilisis, euismod id diam.
-          Quisque et molestie lacus. Pellentesque fermentum vel sem ut pharetra. Vestibulum sed varius orci. In vel
-          lorem lacus. Aliquam lacus arcu, ullamcorper a neque id, sagittis consequat magna. Praesent vestibulum quam
-          metus, a accumsan purus aliquet sit amet. Aliquam faucibus justo sed consectetur condimentum. Vestibulum
-        </p>
-        <!--<img src="images/tablemountain1100 Alt="A view of Table Mountain">
-        <img class="imgcallToActions" src="images/Cape-Chamber-of-Commerce.jpg" Alt="TThe Cape Chamber">-->
-      </div>
-    </section>
-    <section id="events">
-      <h3>Music Events in Cape Town</h3>
-      <p>The Novalis Ubuntu Institute Sat July 2 2022 at 07:00 pm</p>
-      <img src="images/eventimg.GIF" Alt="Upcoming Events">
-    </section>
-    <section id="weather">
-      <h3>Today's Weather</h3>
-
-
-      <h4>Current Temperature <br> <span id="temperature">45</span> °F </h4>
-      <div class="elfsight-app-b95b4b66-7cb2-4af2-91a0-4ead34acbc01"></div>
-      <hr>
-      <div class="windspeedClass">
-        <p>Wind Speed: <span id="windspeed">12</span> MPH</p>
-      </div>
-      <br>
-      <div class="windchillClass">
-        <p>Wind Chill: <span id="windchill"></span> °F </p>
-
-      </div>
-
-    </section>
-    <section id="join">
-      <a href="#">
-        <h3>Join Us!</h3>
-      </a>
-      <p>Find out how to join our chamber of commerce and how your business will benefit from it!</p>
-    </section>
-    <section id="newsReleases">
-      <h3>New Releases</h3>
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptas unde consequuntur sint ab enim,
-        quis
-        excepturi cupiditate ex deleniti voluptatibus assumenda commodi. Nostrum illo sit, minima illum reprehenderit
-        animi.</p>
-      <img class="newsrelease" src="images/newrelease.png" Alt="New Releases">
-    </section>
-    <section id="threeimagemains">
-      <div id="spotLightOne">
-
-        <img class="sl1image" src="images/hotels_com_logo.png" Alt="Hotels.Com Ad">
-
-        <h3>10 Best Things to Do in Cape Town</h3>
-
-        <img class="sl1image" src="images/hotels_com_main500.jpg" Alt="Hotels.Com">
-
-      </div>
-      <div id="spotLightTwo">
-        <h3>Visit Robben Island Today</h3>
-        <img class="sl2image" src="images/robbinislandpic500.jpg" Alt="Robben Island Ad">
-        <img class="sl21image" src="images/robben-island-madiba.webp" Alt="Images of Madiba">
-
-      </div>
-      <div id="spotLightThree">
-        <!--<h3>Where is the best Graduate school in the country ???</h3>-->
-        <img class="sl3image" src="images/gsbimage1100.jpg" Alt="GSB Ad">
-        <img class="sl3image" src="images/gsbct500.jpg" Alt="GSB school">
-      </div>
-    </section>
+    <div class="discoverimgs">
+      <picture>
+        <img src="images/lazyload/placeholder.webp" data-src="image/ottertrailct." alt="Cowboy Statue">
+      </picture>
+      <picture>
+        <img src="images/lazyload/placeholder.webp" data-src="images/discover/business.jpg"
+          alt="Black Forest's business center">
+      </picture>
+      <picture>
+        <img src="images/lazyload/placeholder.webp" data-src="images/discover/festival.jpg"
+          alt="Black Forest Days festival">
+      </picture>
+      <picture>
+        <img src="images/lazyload/placeholder.webp" data-src="images/discover/historic.jpg"
+          alt="Black Forest's historic city center">
+      </picture>
+      <picture>
+        <img src="images/lazyload/placeholder.webp" data-src="images/discover/park.jpg"
+          alt="The Jamon Iberico De Bellota Park">
+      </picture>
+    </div>
   </main>
 
 

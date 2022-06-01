@@ -49,19 +49,21 @@ header, main, footer {
 
 #chambermeeting {
   display:block;
-  max-width: 560px;
+  max-width: px;
   margin: 0 auto;
-  padding: 1%;
+  padding: 0%;
   border: 1px solid var(--primary-boarder);
   background-color: var(--secondary-color);
   border-radius: 25px;
-  
-  
+  /*this keeps the text within the boarders*/
+  overflow: hidden;
+
 }
 
-#chambermeeting h2 {
-  animation: marquee 15s linear infinite;
 
+#chambermeeting h2 {
+  animation: none;
+  text-align: center;
 }
 
 @keyframes marquee {
@@ -73,7 +75,9 @@ header, main, footer {
   }
 }
 
-
+#closems {
+  background-color: #1D3461;
+}
 
 header {
   margin-top: 1%;
@@ -89,13 +93,18 @@ footer {
   text-decoration: none;
   padding: 1rem;
   border-bottom: 1px solid  rgba(0,0,0,0.5);
+  
+
 }
 
 #hamburgernav a:hover {
   background-color: rgba(0,0,0,0.1);
 }
 
-
+#primarynav .activebutton,#hamburgernav .activebutton {
+  background-color: var(--accent1-color);
+  font-weight: bold;
+}
 
 #callToAction a{
   position: absolute;
@@ -144,11 +153,14 @@ footer {
 }
 
 
-nav ul, #hamburgernav {
+#primarynav, #hamburgernav {
   text-align: center;
   display: none;
   list-style-type: none;
-  border-top: 1px solid rgba(0,0,0,0.5);
+  margin-right: 7%;
+  border-top: none;
+  border-bottom: none;
+  /*border-top: 1px solid rgba(0,0,0,0.5);*/
 }
 
 main {
