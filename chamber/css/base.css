@@ -183,7 +183,7 @@ main section, main section div {
   width: 100%;
 
 }
-#events h3, #weather h3, #newsReleases h3, #spotLightTwo h3, #spotLightOne h3, #spotLightThree h3{
+#events h3, #weather h3, #newsReleases h3, #spotLightTwo h3, #spotLightOne h3, #spotLightThree h3 {
   background-color: var(--accent2-color);
   margin: 1%;
   border: 1px solid rgba(0,0,0,0.5);
@@ -400,4 +400,22 @@ header button:hover {
   margin-bottom: 15%;
 }*/
 
+.discovermain {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
+.discoverhead h2{
+  grid-column: 1/4;
+}
+
+#discovermain h3, #discoverhead h2{
+  background-color: var(--accent2-color);
+  margin: 1%;
+  border: 1px solid rgba(0,0,0,0.5);
+  text-align: center;
+  background-color: var(--accent2-color);
+  padding: 1rem;
+  }
 
