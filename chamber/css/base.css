@@ -386,3 +386,18 @@ header button:hover {
   display: none;
   text-align: center;
 }
+
+/*discover page
+
+.lazypics {
+	display: flex;
+  align-items: center;
+  flex-direction: column;
+	gap: 15em;	
+}
+
+.lastload {
+  margin-bottom: 15%;
+}*/
+
+

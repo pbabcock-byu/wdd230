@@ -122,3 +122,8 @@
   }
 }
 
+/*discover page */
+#discoverimages img:hover{
+  box-shadow: 0 0 35px var(--primary-dark);
+}
+

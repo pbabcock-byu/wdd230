@@ -23,7 +23,7 @@
 
   <!-- Script for weather widget (this caused css errors)
   <script src="https://apps.elfsight.com/p/platform.js" defer></script>-->
-  <script src="js/windchill.js" defer></script>
+  <script src="js/lazyload.js" defer></script>
 </head>
 
 
@@ -70,30 +70,39 @@
 
 
   <main>
+    <div id="discovermain">
 
-    <div class="discoverimgs">
-      <picture>
-        <img src="images/lazyload/placeholder.webp" data-src="image/ottertrailct." alt="Cowboy Statue">
-      </picture>
-      <picture>
-        <img src="images/lazyload/placeholder.webp" data-src="images/discover/business.jpg"
-          alt="Black Forest's business center">
-      </picture>
-      <picture>
-        <img src="images/lazyload/placeholder.webp" data-src="images/discover/festival.jpg"
-          alt="Black Forest Days festival">
-      </picture>
-      <picture>
-        <img src="images/lazyload/placeholder.webp" data-src="images/discover/historic.jpg"
-          alt="Black Forest's historic city center">
-      </picture>
-      <picture>
-        <img src="images/lazyload/placeholder.webp" data-src="images/discover/park.jpg"
-          alt="The Jamon Iberico De Bellota Park">
-      </picture>
+
+      <div id="discoverimages">
+        <picture class="lazypics">
+          <img src="" data-src="images/capetown-carnival_w300.jpg" alt="The Cape Carnival">
+          <h3>Cape Town Minstrel Carnival</h3>
+          <img src="" data-src="images/tablemountain_w300.jpg" alt="Table Mountain">
+          <h3>Table Mountain</h3>
+          <img src="" data-src="images/otter-trail-south-africa-w300.jpg" alt="The Otter Trail">
+          <h3>The Otter Trail </h3>
+
+          <img src="" data-src="images/ctstadium_300.jpg" alt="The Cape Town Stadium">
+          <h3>The Cape Town Stadium </h3>
+          <img src="" data-src="images/cape-wine-route-w300.jpg" alt="The Cape Wine Routes">
+          <h3>Cape Town Wine Route</h3>
+          <img id="lastload" src="images/imageph300X400.jpg" data-src="images/ct5-300x400.jpg" alt="Cape Town img 5">
+        </picture>
+
+      </div>
+
+      <div id="discoverdemographic">
+
+      </div>
+
+      <div id="discoverlasthere">
+        <h4>It has been <span id="discoverlasthere"></span> days since your last visit.</h4>
+      </div>
     </div>
-  </main>
 
+
+
+  </main>
 
   <footer>
     <div class="footerbuild">
