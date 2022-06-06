@@ -61,7 +61,7 @@ header, main, footer {
 }
 
 
-#chambermeeting h2 {
+#chambermeeting h2, #discoverhead {
   animation: none;
   text-align: center;
 }
@@ -163,7 +163,9 @@ footer {
   /*border-top: 1px solid rgba(0,0,0,0.5);*/
 }
 
-main {
+
+
+#main_index {
   display: grid;
   gap: 0.5rem;
   grid-template-rows: 1fr 0.1fr 0.5fr 0.5fr;
@@ -400,14 +402,71 @@ header button:hover {
   margin-bottom: 15%;
 }*/
 
-.discovermain {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+
+
+
+
+#discoverimages {
+  grid-column: 1;
+  grid-row: 1;
+}
+#discoverimages1 {
+  grid-column: 1;
+  grid-row: 2;
+}
+#discoverimages2 {
+  grid-column: 1;
+  grid-row: 3;
+}
+#discoverimages3 {
+  grid-column: 1;
+  grid-row: 4;
+}
+#discoverimages4 {
+  grid-column: 1;
+  grid-row: 5;
 }
 
 
-.discoverhead h2{
-  grid-column: 1/4;
+#carnival_dis {
+  grid-column: 2;
+  grid-row: 1;
+
+}
+#tablemountain_dis
+{
+  grid-column: 2;
+  grid-row: 2;
+}
+
+#otter_dis{
+  grid-column: 2;
+  grid-row: 3;
+}
+
+#ctstadium_dis {
+  grid-column: 2;
+  grid-row: 4;
+}
+#wine_dis {
+  grid-column: 2;
+  grid-row: 5;
+}
+
+ #discovermain {
+  padding: 2%;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 5fr repeat();
+  background-color: var(--accent1-color)
+  
+}
+#discovermain img{
+  padding: 2%;
+}
+#discovermain p{
+  padding-left: 1%;
 }
 
 #discovermain h3, #discoverhead h2{
