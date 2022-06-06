@@ -24,6 +24,7 @@
   <!-- Script for weather widget (this caused css errors)
   <script src="https://apps.elfsight.com/p/platform.js" defer></script>-->
   <script src="js/lazyload.js" defer></script>
+  <script src="js/localstorage.js" defer></script>
 </head>
 
 
@@ -69,45 +70,94 @@
   </header>
 
 
-  <abc>
-    <div id="discoverhead">
-      <h2> Statistical and Demographic Information</h2>
+  <main>
+
+    <div>
+      <h2 id="discoverhead"> Statistical and Demographic Information</h2>
     </div>
+
+
     <div id="discovermain">
 
 
-
-
       <div id="discoverimages">
-        <picture class="lazypics">
-          <img src="" data-src="images/capetown-carnival_w300.jpg" alt="The Cape Carnival">
-          <h3>Cape Town Minstrel Carnival</h3>
-          <img src="" data-src="images/tablemountain_w300.jpg" alt="Table Mountain">
-          <h3>Table Mountain</h3>
-          <img src="" data-src="images/otter-trail-south-africa-w300.jpg" alt="The Otter Trail">
-          <h3>The Otter Trail </h3>
-
-          <img src="" data-src="images/ctstadium_300.jpg" alt="The Cape Town Stadium">
-          <h3>The Cape Town Stadium </h3>
-          <img src="" data-src="images/cape-wine-route-w300.jpg" alt="The Cape Wine Routes">
-          <h3>Cape Town Wine Route</h3>
-          <img id="lastload" src="images/imageph300X400.jpg" data-src="images/ct5-300x400.jpg" alt="Cape Town img 5">
-        </picture>
-
+        <h3>Cape Town Minstrel Carnival</h3>
+        <img src="" data-src="images/capetown-carnival_w300.jpg" alt="The Cape Carnival">
+      </div>
+      <div id="discoverimages1">
+        <h3>Table Mountain</h3>
+        <img src="" data-src="images/tablemountain_w300.jpg" alt="Table Mountain">
+      </div>
+      <div id="discoverimages2">
+        <h3>The Otter Trail </h3>
+        <img src="" data-src="images/otter-trail-south-africa-w300.jpg" alt="The Otter Trail">
+      </div>
+      <div id="discoverimages3">
+        <h3>The Cape Town Stadium </h3>
+        <img src="" data-src="images/ctstadium_300.jpg" alt="The Cape Town Stadium">
+      </div>
+      <div id="discoverimages4">
+        <h3>Cape Town Wine Route</h3>
+        <img src="" data-src="images/cape-wine-route-w300.jpg" alt="The Cape Wine Routes">
       </div>
 
-      <div id="discoverdemographic">
 
+
+      <div id="carnival_dis">
+        <p>Over the years the Coloured people of the Cape Peninsula have developed a musical sound of their own, which
+          is as much part of the Cape’s heritage as it’s sparkling white beaches and autumn-hued vinyeards. Drifting on
+          the evening air the plink-a-plonk of banjos and guitars and almost brazen sound of saxophones pour from
+          labourers cottages on the farms of Constantia or from the warren-like, sprawling slum of District Six; from
+          shanties tucked amid the Port Jackson Willows and sand dunes of the Cape Flats or the neatly terraced
+          fisherman’s cottages of Hout Bay comes the sound of the Cape Carnival Beat.</p>
+      </div>
+      <div id="tablemountain_dis">
+        <p>It is the only South African and only natural site on the planet to have a constellation of stars named after
+          it. The constellation is called “Mensa”, which means ‘table’ in Latin.
+          Having withstood 6 million years of erosion, it hosts the richest floral kingdom on earth, with more than 1
+          470 floral species.
+          The Khoi people used to call the mountain Hoerikwaggo (Mountain of the Sea).
+          The rocks on the mountain are over 600,000,000 years old making Table Mountain one of the oldest mountains in
+          the world.</p>
+      </div>
+      <div id="otter_dis">
+        <p>The Otter trail is officially the oldest and undoubtedly the most iconic hiking trail in South
+          Africa. The
+          trail, which runs along the spectacular coastline between the Storms River mouth and Nature’s Valley, was
+          opened in 1968 and is considered one of the finest multi-day trails in the world. It is named after the shy,
+          mostly nocturnal, Cape Clawless Otter which inhabits the estuaries and streams of the South African coast.
+          Beauty: The definitive 5/5
+          Difficulty rating: 7/10
+          Duration: 45km
+        </p>
+      </div>
+      <div id="ctstadium_dis">
+        <p>The stadium is located in Green Point, between Signal Hill and the Atlantic Ocean, close to the Cape Town
+          city
+          center and to the Victoria & Alfred Waterfront, a popular tourist and shopping venue. The stadium had a
+          seating capacity of 64,100 during the 2010 World Cup,later reduced to 58,309. The stadium is connected to
+          the
+          waterfront by a new road connection, Granger Bay Boulevard. Cape Town Stadium is the 5th biggest stadium in
+          South Africa; the biggest in Cape Town.</p>
+      </div>
+      <div id="wine_dis">
+        <p>Wine tasting is one of the best ways to spend a day in Cape Town. Combine the delicious wines with some of
+          the most beautiful landscapes on earth, century old architecture, and awe-inspiring food, and it’s no
+          surprise
+          that it’s one of Cape Town’s most beloved activities for visitors and locals alike.
+
+          Wine estates are a dime a dozen, so it can be hard to know where to start. Take a look at our guide to
+          wine-tasting in Cape Town and get ready to enjoy the finest wines of the region!</p>
       </div>
     </div>
-    <div id="discoverlasthere">
-      <h4>It has been <span id="discoverlasthere"></span> days since your last visit.</h4>
+
     </div>
 
-
-
-
-  </abc>
+    <div>
+      <h4>It has been <span class="discoverlasthere"></span> days since your last visit.</h4>
+      <h4>Number of Visits: <span class="discovervisits"></span></h4>
+    </div>
+  </main>
 
   <footer>
     <div class="footerbuild">
