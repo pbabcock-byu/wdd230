@@ -121,6 +121,10 @@
 
 
 /* for the discover page */
+#carnival_dis, #tablemountain_dis, #otter_dis, #ctstadium_dis,#wine_dis {
+  display: block;
+}
+
 #discoverimages {
   grid-column: 1;
   grid-row: 1;
@@ -143,23 +147,18 @@
 }
 
 
-
 #carnival_dis {
   grid-column: 2;
   grid-row: 1;
-
 }
-#tablemountain_dis
-{
+#tablemountain_dis{
   grid-column: 2;
   grid-row: 2;
 }
-
 #otter_dis{
   grid-column: 2;
   grid-row: 3;
 }
-
 #ctstadium_dis {
   grid-column: 2;
   grid-row: 4;

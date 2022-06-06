@@ -389,6 +389,8 @@ header button:hover {
   text-align: center;
 }
 
+
+/* for the discover page */
 /*discover page
 
 .lazypics {
@@ -407,12 +409,9 @@ header button:hover {
   display: none;
 }
 
-
-  
 #discovermain img{
   padding: 2%;
 }
-
 
 #discovermain h3, #discoverhead h2{
   background-color: var(--accent2-color);
@@ -423,3 +422,7 @@ header button:hover {
   padding: 1rem;
   }
 
+.statupdate img {
+  background-color: var(--primary-dark);
+  width: 96%;
+}
