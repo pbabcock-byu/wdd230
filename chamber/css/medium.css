@@ -123,7 +123,20 @@
 }
 
 /*discover page */
-#discoverimages img:hover{
+
+#discovermain {
+  padding: 2%;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 5fr repeat();
+  background-color: var(--accent1-color)
+ }
+
+#discovermain img:hover{
   box-shadow: 0 0 35px var(--primary-dark);
 }
 
+#carnival_dis, #tablemountain_dis, #otter_dis, #ctstadium_dis,#wine_dis {
+  display: block;
+}
