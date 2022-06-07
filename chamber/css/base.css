@@ -409,6 +409,7 @@ header button:hover {
   display: none;
 }
 
+
 #discovermain img{
   padding: 2%;
 }
@@ -425,4 +426,9 @@ header button:hover {
 .statupdate img {
   background-color: var(--primary-dark);
   width: 96%;
+}
+
+#discovermain {
+  display: block;
+  grid-template-columns: 1fr;
 }
