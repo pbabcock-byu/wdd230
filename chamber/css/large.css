@@ -117,7 +117,7 @@
     display: block;
     text-align: center;
   }
-}
+
 
 
 /* for the discover page */
@@ -173,3 +173,8 @@
 #discovermain {
   grid-template-columns: 1fr 1fr 1fr;
  }
+
+
+
+ 
+}/* Need this to close the medium.NOT CODE AFTER THIS!!!*/ 

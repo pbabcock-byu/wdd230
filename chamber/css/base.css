@@ -412,6 +412,7 @@ header button:hover {
 
 #discovermain img{
   padding: 2%;
+  width: 96%;
 }
 
 #discovermain h3, #discoverhead h2{
@@ -427,6 +428,8 @@ header button:hover {
   background-color: var(--primary-dark);
   width: 96%;
 }
+
+
 
 #discovermain {
   display: block;
