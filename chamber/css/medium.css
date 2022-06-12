@@ -157,5 +157,26 @@
   grid-row: 5;
 }
 
+/* join page */
+#membershipapp {
+  padding: 2%;
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--accent1-color)
+}
+
+#detailedinformation {
+  display: grid;
+}
+
+.subappBtnsm {
+  display: none;
+}
+#subappBtn{
+  display: block;
+}
+
+
 } /* Need this to close the medium.NOT CODE AFTER THIS!!!*/ 
 

@@ -456,7 +456,7 @@ header button:hover {
 
 /*Join Page */
 
-detailedinformation {
+#detailedinformation {
   display: none;
 }
 
@@ -476,7 +476,7 @@ form input:required {
   padding: 2%;
   display: grid;
   gap: 0.5rem;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr;
   background-color: var(--accent1-color)
 }
 
@@ -579,6 +579,10 @@ tbody tr:nth-child(10) {
   background-color: var(--secondary-color);
 }
 
+.detailedinformation li {
+  text-align: left;
+}
+
   /*Join.html button */
 
 
@@ -590,8 +594,18 @@ tbody tr:nth-child(10) {
     border: 1px solid  rgba(0,0,0,0.5);
     outline: 1px solid var(--secondary-color);
     margin-top: 5%;
-    margin-left: 30%;
+    margin-left: 10%;
+    width: 80%;
   }
 
-
+  .subappBtnsm {
+    padding: 2rem;
+    background-color: rgba(220, 220, 220, 0.5);
+    color: var(--main-text);
+    text-decoration: none;
+    border: 1px solid  rgba(0,0,0,0.5);
+    outline: 1px solid var(--secondary-color);
+    margin-top: 0%;
+    margin-left: 28%;
+  }
   
