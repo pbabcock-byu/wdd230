@@ -23,7 +23,6 @@ body {
 tbody tr:nth-child(even) {
   background-color: rgb(160, 190, 87)
   
-
 }
 tbody tr:nth-child(odd) {
   background-color: #cca8c0;
