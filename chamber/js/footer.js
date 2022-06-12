@@ -2,6 +2,10 @@ const now = new Date();
 const fullDate = new Intl.DateTimeFormat("en-UK", {dateStyle: "full"}).format(now);
 const currentYear = now.getFullYear();
 
+/*this is for the join page to add the date when when someone loads the page
+NOTE THIS FIELD IS HIDDEN*/
+document.querySelector(".hiddenDT").value = Date().toLocaleString();
+
 document.querySelector(".currentdate").innerHTML = fullDate;
 document.querySelector("#copyrightupdatesmall_year").innerHTML = currentYear;
 document.getElementById("copyrightupdatesmall_lastup").innerHTML = document.lastModified;
@@ -36,3 +40,5 @@ const closems = document.querySelector("#closems");
 closems.addEventListener("click", () => {
     chambermeeting.style.display = "none";
 });
+
+

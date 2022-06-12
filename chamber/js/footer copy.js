@@ -11,6 +11,9 @@ document.querySelector("#copyrightupdatelarge_year").innerHTML = currentYear;
 document.getElementById("copyrightupdatelarge_lastup").innerHTML = document.lastModified;
 
 
+
+
+
 function toggleMenu() {
     document.getElementById("hamburgernav").classList.toggle("open");
     document.getElementById("hamburgerbtn").classList.toggle("open");

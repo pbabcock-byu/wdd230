@@ -174,7 +174,10 @@
   grid-template-columns: 1fr 1fr 1fr;
  }
 
-
+ .subappBtn {
+  margin-left: 25%;
+  width: 50%;
+}
 
  
 }/* Need this to close the medium.NOT CODE AFTER THIS!!!*/ 

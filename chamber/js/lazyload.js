@@ -3,6 +3,7 @@ let imagesToLoad = document.querySelectorAll('img[data-src]')
 
 
 
+
 // changes the src image path to the image path found in data-src
 const loadImages = (image) => {
     image.setAttribute('src', image.getAttribute('data-src')); // changes the src path to the data-src path
