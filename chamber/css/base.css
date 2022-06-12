@@ -49,7 +49,7 @@ header, main, footer {
 
 #chambermeeting {
   display:block;
-  max-width: px;
+
   margin: 0 auto;
   padding: 0%;
   border: 1px solid var(--primary-boarder);
@@ -528,6 +528,11 @@ form textarea {
   font-size: 24px;
   width: 96%;
 }
+
+.bus-info textarea {
+  width: 96%;
+}
+
 
 .legend {
   font-size: 16px;

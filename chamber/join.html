@@ -24,50 +24,50 @@
   <script src="js/lazyload.js" defer></script>
 
 </head>
-<header>
-
-  <div>
-    <div class=" logo">
-      <img src="images/za-gt-kp2.jpg" alt="Chambers Logo">
-      <section class="headings">
-        <h1>Cape Town</h1>
-        <h2>Chamber of Commerce</h2>
-      </section>
-    </div>
-    <nav>
-      <ul id="primarynav">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="discover.html">Discover</a></li>
-        <li><a href="#">Directory</a></li>
-        <li><a class="activebutton" href="join.html">Join</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="social">
-      <a href="https://www.linkedin.com"><img src="images/linkedinsmall.jpg" alt="linkedin"></a>
-      <a href="https://www.facebook.com"><img src="images/fbsmall.jpg" alt="Facebook"></a>
-    </div>
-    <button id="hamburgerbtn"><span>&#9776;</span><span>X</span></button>
-  </div>
-  <ul id="hamburgernav">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="discover.html">Discover</a></li>
-    <li><a href="#">Directory</a></li>
-    <li><a class="activebutton" href="join.html">Join</a></li>
-    <li><a href="#">Contact</a></li>
-  </ul>
-  <H2 class="currentdate"></h2>
-
-</header>
 
 <body>
+  <header>
+    <div>
+      <div class=" logo">
+        <img src="images/za-gt-kp2.jpg" alt="Chambers Logo">
+        <section class="headings">
+          <h1>Cape Town</h1>
+          <h2>Chamber of Commerce</h2>
+        </section>
+      </div>
+      <nav>
+        <ul id="primarynav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="discover.html">Discover</a></li>
+          <li><a href="#">Directory</a></li>
+          <li><a class="activebutton" href="join.html">Join</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="social">
+        <a href="https://www.linkedin.com"><img src="images/linkedinsmall.jpg" alt="linkedin"></a>
+        <a href="https://www.facebook.com"><img src="images/fbsmall.jpg" alt="Facebook"></a>
+      </div>
+      <button id="hamburgerbtn"><span>&#9776;</span><span>X</span></button>
+    </div>
+    <ul id="hamburgernav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="discover.html">Discover</a></li>
+      <li><a href="#">Directory</a></li>
+      <li><a class="activebutton" href="join.html">Join</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <H2 class="currentdate"></h2>
+  </header>
+
+
   <main id="main_join">
     <div>
       <h2 id="join_head">Cape Town Chamber of Commerce Membership Application</h2>
     </div>
-    <div id="membershipapp">
-      <div>
-        <form method="get" action="./thankyou.html">
+    <form method="get" action="./thankyou.html">
+      <div id="membershipapp">
+        <div>
           <fieldset class="information-form infoform">
             <legend>Applicant Information</legend>
             <label>First Name* </label>
@@ -88,153 +88,156 @@
             <label> Business Position </label>
             <input type="text" name="busposition" pattern="[A-Za-z\s-]{7,}">
             <label> Business Description </label>
-            <input type="textarea" name="busdescription"">
-        </fieldset>
-     
-        <fieldset class=" information-form membership-form">
+            <textarea name="textarea" id="busdescription">            </textarea>
+          </fieldset>
+
+          <fieldset class=" information-form membership-form">
             <legend>Membership Levels<em> (Choose one)</em></legend>
 
             <div class="selection">
               <input type="radio" name="membership1" id="membership1" value="1" checked>
-              <label for="goldm">Gold Member</label>
+              <label id="goldm">Gold Member</label>
               <input type="radio" name="membership2" id="membership2" value="2">
-              <label for="silverm">Silver Member</label>
+              <label id="silverm">Silver Member</label>
               <input type="radio" id="membership3" name="membership3" value="3">
-              <label for="bronzem">Bronze Member</label>
+              <label id="bronzem">Bronze Member</label>
               <input type="radio" id="membership4" name="membership4" value="4">
-              <label for="np">NP Member (Non-Profit)</label>
+              <label id="np">NP Member (Non-Profit)</label>
             </div>
           </fieldset>
 
+        </div>
+        <div id="detailedinformation">
+          <table>
+            <caption>Details on Membership Levels</caption>
+            <tbody>
+              <tr>
+                <th scope="col" colspan="2">Gold Member</th>
+              </tr>
+              <tr>
+                <th scope="col">Cost: </th>
+                <th>$2 000 pa</th>
+              </tr>
+              <tr>
+                <th scope="col" colspan="2">
+                  <ul>
+                    <li>apples</li>
+                    <li>bananas</li>
+                    <li>pineapples</li>
+                  </ul>
+                </th>
+              </tr>
+
+              <tr>
+                <th scope="col" colspan="2">Silver Member</th>
+              </tr>
+              <tr>
+                <th scope="col">Cost: </th>
+                <th>$1 200 pa</th>
+              </tr>
+              <tr>
+                <th scope="col" colspan="2">
+                  <ul>
+                    <li>apples</li>
+                    <li>bananas</li>
+                    <li>pineapples</li>
+                  </ul>
+                </th>
+              </tr>
+
+              <tr>
+                <th scope="col" colspan="2">Bronze Member</th>
+              </tr>
+              <tr>
+                <th scope="col">Cost: </th>
+                <th>$800 pa</th>
+              </tr>
+              <tr>
+                <th scope="col" colspan="2">
+                  <ul>
+                    <li>apples</li>
+                    <li>bananas</li>
+                    <li>pineapples</li>
+                  </ul>
+                </th>
+              </tr>
+
+              <tr>
+                <th scope="col" colspan="2">NP Member (Non-Profit)</th>
+              </tr>
+              <tr>
+                <th scope="col">Cost: </th>
+                <th>Free</th>
+              </tr>
+              <tr>
+                <th scope="col" colspan="2">
+                  <ul>
+                    <li>apples</li>
+                    <li>bananas</li>
+                    <li>pineapples</li>
+                  </ul>
+                </th>
+              </tr>
+
+            </tbody>
+
+            <tfoot>
+              <tr>
+                <th scope="col" colspan="2">Compiled 12.20.2020 by Peter Babcock</th>
+              </tr>
+            </tfoot>
+          </table>
+          <input type="submit" value="Submit you Application" class="subappBtn">
+
+
+        </div>
+        <P>* These fields are required to be completed </P>
       </div>
-      <div id="detailedinformation">
-        <table>
-          <caption>Details on Membership Levels</caption>
-          <tbody>
-            <tr>
-              <th scope="col" colspan="2">Gold Member</th>
-            </tr>
-            <tr>
-              <th scope="col">Cost: </th>
-              <th>$2 000 pa</th>
-            </tr>
-            <tr>
-              <th scope="col" colspan="2">
-                <ul>
-                  <li>apples</li>
-                  <li>bananas</li>
-                  <li>pineapples</li>
-                </ul>
-              </th>
-            </tr>
-
-            <tr>
-              <th scope="col" colspan="2">Silver Member</th>
-            </tr>
-            <tr>
-              <th scope="col">Cost: </th>
-              <th>$1 200 pa</th>
-            </tr>
-            <tr>
-              <th scope="col" colspan="2">
-                <ul>
-                  <li>apples</li>
-                  <li>bananas</li>
-                  <li>pineapples</li>
-                </ul>
-              </th>
-            </tr>
-
-            <tr>
-              <th scope="col" colspan="2">Bronze Member</th>
-            </tr>
-            <tr>
-              <th scope="col">Cost: </th>
-              <th>$800 pa</th>
-            </tr>
-            <tr>
-              <th scope="col" colspan="2">
-                <ul>
-                  <li>apples</li>
-                  <li>bananas</li>
-                  <li>pineapples</li>
-                </ul>
-              </th>
-            </tr>
-
-            <tr>
-              <th scope="col" colspan="2">NP Member (Non-Profit)</th>
-            </tr>
-            <tr>
-              <th scope="col">Cost: </th>
-              <th>Free</th>
-            </tr>
-            <tr>
-              <th scope="col" colspan="2">
-                <ul>
-                  <li>apples</li>
-                  <li>bananas</li>
-                  <li>pineapples</li>
-                </ul>
-              </th>
-            </tr>
-
-          </tbody>
-
-          <tfoot>
-            <tr>
-              <th scope="col" colspan="2">Compiled 12.20.2020 by Peter Babcock</th>
-            </tr>
-          </tfoot>
-        </table>
-        <input type="submit" value="Submit you Application" class="subappBtn">
-        </form>
-
-      </div>
-      <P>* These fields are required to be completed </P>
+    </form>
   </main>
+
+
+  <footer>
+    <div class=" footerbuild">
+      <div class="footerlogo">
+        <img src="images/za-gt-kp2.jpg" alt="Cape Town City flag.">
+        <section class="footerheadings">
+          <h2>Cape Town</h2>
+          <h3>Chamber of Commerce</h3>
+          <p>27 Profusa st., Cape Town, 1819, South Africa</p>
+        </section>
+      </div>
+      <div class="footercontact">
+        <a href="contactus@kpchamber.info">contactus@kpchamber.info</a>
+        <p>011-976-4272</p>
+
+        <!-- <div class="footmaps"> -->
+        <img src="images/googlemapspin.jpg" alt="Map pin">
+        <a href="https://www.google.com/maps/" target="_blank">Map Location</a>
+        <!-- </div> -->
+      </div>
+    </div>
+    <div class="copyrightupdatesmall">
+      <p>&copy; <span id="copyrightupdatesmall_year"></span> Cape TownChamber project</p>
+      <p>Peter Babcock</p>
+      <p>WDD 230 Project</p>
+      <p>Last Updated: <span id="copyrightupdatesmall_lastup"></span></p>
+    </div>
+    <div class="copyrightupdatemedium">
+      <p>&copy; <span id="copyrightupdatemedium_year"></span> Cape Town Chamber project .:|:. Peter Babcock .:|:. WDD
+        230 Project
+      </p>
+      <p>Last Updated: <span id="copyrightupdatemedium_lastup"></span></p>
+    </div>
+    <div class="copyrightupdatelarge">
+      <p>&copy; <span id="copyrightupdatelarge_year"></span> Cape Townk Chamber project .:|:. Peter Babcock .:|:. WDD
+        230 Project
+        .:|:.
+        Last
+        Updated: <span id="copyrightupdatelarge_lastup"></span></p>
+    </div>
+    <script src="js/footer.js"></script>
+  </footer>
 </body>
-
-<footer>
-  <div class=" footerbuild">
-    <div class="footerlogo">
-      <img src="images/za-gt-kp2.jpg" alt="Cape Town City flag.">
-      <section class="footerheadings">
-        <h2>Cape Town</h2>
-        <h3>Chamber of Commerce</h3>
-        <p>27 Profusa st., Cape Town, 1819, South Africa</p>
-      </section>
-    </div>
-    <div class="footercontact">
-      <a href="contactus@kpchamber.info">contactus@kpchamber.info</a>
-      <p>011-976-4272</p>
-
-      <!-- <div class="footmaps"> -->
-      <img src="images/googlemapspin.jpg" alt="Map pin">
-      <a href="https://www.google.com/maps/" target="_blank">Map Location</a>
-      <!-- </div> -->
-    </div>
-  </div>
-  <div class="copyrightupdatesmall">
-    <p>&copy; <span id="copyrightupdatesmall_year"></span> Cape TownChamber project</p>
-    <p>Peter Babcock</p>
-    <p>WDD 230 Project</p>
-    <p>Last Updated: <span id="copyrightupdatesmall_lastup"></span></p>
-  </div>
-  <div class="copyrightupdatemedium">
-    <p>&copy; <span id="copyrightupdatemedium_year"></span> Cape Town Chamber project .:|:. Peter Babcock .:|:. WDD
-      230 Project
-    </p>
-    <p>Last Updated: <span id="copyrightupdatemedium_lastup"></span></p>
-  </div>
-  <div class="copyrightupdatelarge">
-    <p>&copy; <span id="copyrightupdatelarge_year"></span> Cape Townk Chamber project .:|:. Peter Babcock .:|:. WDD
-      230 Project
-      .:|:.
-      Last
-      Updated: <span id="copyrightupdatelarge_lastup"></span></p>
-  </div>
-  <script src="js/footer.js"></script>
-</footer>
 
 </html>
