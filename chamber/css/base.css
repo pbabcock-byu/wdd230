@@ -313,6 +313,7 @@ header button:hover {
 
 .social {
   margin-top: 1.5rem;
+  display: inline;
 }
 .social img {
   width: 3rem;
