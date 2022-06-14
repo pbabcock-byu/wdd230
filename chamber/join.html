@@ -20,9 +20,10 @@
   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
 
   <link rel="icon" href="images/kp_icon.webp" type="image/x-icon">
-  <script src="js/date_join.js" defer></script>
-  <script src="js/lazyload.js" defer></script>
 
+  <script src="js/footer.js" defer></script>
+  <script src="js/lazyload.js" defer></script>
+  <script src="js/date_join.js" defer></script>
 </head>
 
 <body>
@@ -70,24 +71,24 @@
         <div>
           <fieldset class="information-form infoform">
             <legend>Applicant Information</legend>
-            <label>First Name* </label>
-            <input type="text" name="fname" required>
-            <label> Last Name* </label>
-            <input type="text" name="lname" required>
-            <label> Cell Phone* </label>
-            <input type="tel" name="phone" placeholder="(011) 222-3333" required>
-            <label> Email* </label>
-            <input type="email" name="email" placeholder="user@email.org"
+            <label for="fname">First Name* </label>
+            <input type="text" id="fname" required>
+            <label for="lname"> Last Name* </label>
+            <input type="text" id="lname" required>
+            <label for="phone"> Cell Phone* </label>
+            <input type="tel" id="phone" placeholder="(011) 222-3333" required>
+            <label for="email"> Email* </label>
+            <input type="email" id="email" placeholder="user@email.org"
               pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required>
           </fieldset>
 
           <fieldset class="information-form bus-info">
             <legend>Business Information</legend>
-            <label> Business Name*</label>
-            <input type="text" name="bname" required>
-            <label> Business Position </label>
-            <input type="text" name="busposition" pattern="[A-Za-z\s-]{7,}">
-            <label> Business Description </label>
+            <label for="bname"> Business Name*</label>
+            <input type="text" id="bname" required>
+            <label for="busposition"> Business Position </label>
+            <input type="text" id="busposition" pattern="[A-Za-z\s-]{7,}">
+            <label for="busdescription"> Business Description </label>
             <textarea name="textarea" id="busdescription">            </textarea>
           </fieldset>
 
@@ -95,14 +96,14 @@
             <legend>Membership Levels<em> (Choose one)</em></legend>
 
             <div class="selection">
-              <input type="radio" name="membership" id="membership" value="1" checked>
-              <label id="goldm">Gold Member</label>
-              <input type="radio" name="membership" id="membership" value="2">
-              <label id="silvehomerm">Silver Member</label>
-              <input type="radio" id="membership" name="membership" value="3">
-              <label id="bronzem">Bronze Member</label>
-              <input type="radio" id="membership" name="membership" value="4">
-              <label id="np">NP Member (Non-Profit)</label>
+              <input type="radio" id="goldm" name="membership" class="membership" value="1" checked>
+              <label for="goldm">Gold Member</label>
+              <input type="radio" id="silvehomerm" name="membership" class="membership" value="2">
+              <label for="silvehomerm">Silver Member</label>
+              <input type="radio" id="bronzem" name="membership" class="membership" value="3">
+              <label for="bronzem">Bronze Member</label>
+              <input type="radio" id="np" name="membership" class="membership" value="4">
+              <label for="np">NP Member (Non-Profit)</label>
             </div>
           </fieldset>
 
@@ -195,12 +196,12 @@
               </tr>
             </tfoot>
           </table>
-          <input type="submit" value="Submit you Application" class="subappBtn">
+          <input type="submit" value="Submit Your Application" class="subappBtn">
 
 
         </div>
         <div>
-          <input type="submit" value="Submit you Application" class="subappBtnsm">
+          <input type="submit" value="Submit Your Application" class="subappBtnsm">
         </div>
         <div>
           <P>* These fields are required to be completed </P>
@@ -251,7 +252,7 @@
         Last
         Updated: <span id="copyrightupdatelarge_lastup"></span></p>
     </div>
-    <script src="js/footer.js"></script>
+
   </footer>
 </body>
 
