@@ -1,0 +1,65 @@
+:root {
+  --primary-color: #E5E5E5;
+  --secondary-color: #466EC3;
+  --accent1-color: #faf9f9;
+  --accent2-color: #ebe8e8;
+  --primary-dark: #888888;
+  --active-link: yellow;
+  --main-text:black;
+  --primary-boarder: black;
+
+  /* Possible Fonts to use on page */
+  --heading-font: "Merriweather", serif;
+  /*--heading-font: "Verdana", Geneva, sans-serif;  */
+  --paragraph-font: "Georgia", Times;
+  --link-font: "Verdana", Geneva, sans-serif;
+}
+
+
+h1 {
+  font-family: var(--heading-font);
+  color: var(--main-text);
+  font-size: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-family: var(--heading-font);
+  color: var(--main-text);
+  font-size: 22px;
+  text-align: center;
+}
+
+p {
+  font-family: var(--paragraph-font);
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  margin: auto;
+  width: 100%;
+  flex-direction: column;
+}
+
+section {
+  background-color: var(--accent2-color);
+  margin: 1%;
+  border: 1px solid rgba(0,0,0,0.5);
+  text-align: center;
+  background-color: var(--accent2-color);
+  padding: 1rem;
+  border-radius: 25px;
+}
+
+
+@media screen and (min-width:825px) {
+
+
+  .cards {
+    flex-direction: row;
+    margin: auto;
+    flex-wrap: wrap;
+  }
+
+}
