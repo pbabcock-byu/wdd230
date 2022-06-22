@@ -329,13 +329,16 @@ header button:hover {
 
 .footerbuild a:link {
   color: white;
-  background-color: transparent;
+  background-cgq olor: transparent;
   text-decoration: none;
-
+  font-weight: bold;
+  font-size: large;
 }
 
 .footerheadings, .footercontact{
   color: white;
+  font-weight: bold;
+  font-size: large;
 }
 
 .footerbuild a:visited {
