@@ -20,8 +20,10 @@ fetch(url)
     currentTemp.innerHTML = `<strong>${(data.main.temp * 9/5 + 32).toFixed(2)}</strong>`;
     windspeed.innerHTML = `<strong>${data.wind.speed.toFixed(2)}</strong>`;
     Humidity.innerHTML = `<strong>${data.main.humidity.toFixed(2)}</strong>`;
-    Hightemperature.innerHTML = `<strong>${data.main.temp_max.toFixed(2)}</strong>`;
-    Lowtemperature.innerHTML = `<strong>${data.main.temp_min.toFixed(2)}</strong>`;
+
+    Hightemperature.innerHTML = `<strong>${(data.main.temp_max * 9/5 + 32).toFixed(2)}</strong>`;
+    Lowtemperature.innerHTML = `<strong>${(data.main.temp_min * 9/5 + 32).toFixed(2)}</strong>`;
+
     
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     const desc = data.weather[0].description;
