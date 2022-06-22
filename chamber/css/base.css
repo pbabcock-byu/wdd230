@@ -124,7 +124,9 @@ footer {
   
 }
 
-
+#callToAction {
+  margin-top: 2%;
+}
 
 #join a{
   display: block;
@@ -169,12 +171,13 @@ footer {
 #main_index {
   display: grid;
   gap: 0.5rem;
-  grid-template-rows: 1fr 0.1fr 0.5fr 0.5fr;
+  grid-template-rows: 0.5fr 0.1fr 0.5fr 0.5fr;
   background-color: var(--accent1-color)
 }
 
 .headings {
   text-align: center;
+  margin-left: 0.1%;
 }
 main section, main section div {
   background-color: rgba(0,0,0,0.2);
@@ -184,6 +187,7 @@ main section, main section div {
 
 #callToAction img {
   width: 100%;
+  display: block;
 
 }
 #events h3, #weather h3, #newsReleases h3, #spotLightTwo h3, #spotLightOne h3, #spotLightThree h3 {
@@ -192,21 +196,22 @@ main section, main section div {
   border: 1px solid rgba(0,0,0,0.5);
   text-align: center;
   background-color: var(--accent2-color);
-  padding: 1rem;
+  padding: 1rem
   }
-  
-#weather div, h4 {
+
+
+
+#weather div, h4 ,p{
   text-align: center;
 
 }
 
 
-#weather  {
-    padding-bottom: 1rem;
-}
 
-#weather h3  {
-  margin-bottom: 1rem;
+#weather figure {
+  text-align: center;
+  color: var(--primary-dark)
+
 }
 
 #events {
@@ -218,16 +223,7 @@ main section, main section div {
 }
 
 
-#weather {
-  width: 70%;
-  margin-left: 15%;
-}
 
-#weather .elfsight-app-b95b4b66-7cb2-4af2-91a0-4ead34acbc01{
-  background-color: powderblue;
-  margin-left: 25%;
-  margin-right: 25%;
-}
 
 #spotLightOne .sl1image, .sl2image, .sl21image, .sl3image, .newsrelease {
   width: 100%;
@@ -239,11 +235,9 @@ main section, main section div {
   display: flex;
   flex-direction: column;
   gap: 0.25rem;
+  margin-bottom: 2%;
+}
 
-}
-#spotLightThree {
-  display: none;
-}
 
 header div {
   margin-bottom: 1rem;
@@ -274,7 +268,7 @@ header button:hover {
   display: flex;
   gap: 0.25rem;
 }
-#spotLightThree {
+#spotLightTwo {
   display: none;
 }
 
@@ -321,6 +315,8 @@ header button:hover {
 }
 
 
+
+
 .footerbuild {
   display: block;
   margin: 0;
@@ -332,11 +328,16 @@ header button:hover {
 }
 
 .footerbuild a:link {
-  color: var(--main-text);
+  color: white;
   background-color: transparent;
   text-decoration: none;
 
 }
+
+.footerheadings, .footercontact{
+  color: white;
+}
+
 .footerbuild a:visited {
   color: var(--active-link);
   background-color: transparent;
