@@ -328,7 +328,7 @@ header button:hover {
 }
 
 .footerbuild a:link {
-  color: white;
+  color: black;
   background-cgq olor: transparent;
   text-decoration: none;
   font-weight: bold;
@@ -336,7 +336,7 @@ header button:hover {
 }
 
 .footerheadings, .footercontact{
-  color: white;
+
   font-weight: bold;
   font-size: large;
 }
