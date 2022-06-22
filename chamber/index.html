@@ -25,6 +25,7 @@
   <script src="https://apps.elfsight.com/p/platform.js" defer></script>-->
   <script src="js/windchill.js" defer></script>
   <script src="js/indexbanner.js" defer></script>
+  <script src="js/weatherapi.js" defer></script>
 
 </head>
 
@@ -32,14 +33,10 @@
 
 
 <body>
-
-
   <header>
-
-
-
     <div>
       <div class=" logo">
+
         <img src="images/za-gt-kp2.jpg" alt="Chambers Logo">
         <section class="headings">
           <h1>Cape Town</h1>
@@ -79,56 +76,42 @@
   </header>
 
 
+
   <main id="main_index">
 
     <section id="callToAction">
       <div>
         <a href="join.html">
-          <h4>Join the Chamber</h4>
+          <h3>Join the Chamber</h3>
         </a>
-        <!--wdd230-large-->
         <picture class="photoa">
-          <!--  Pictute and source element here -->
-          <!-- if the images is 50% of the page with the image must be 50% of the media query width
-              if its 100% image it must match the media query-->
-          <source media="(max-width: 375px)" srcset="images/wdd230-small.jpg"> <!-- test on cell view -->
-          <source media="(max-width: 780px)" srcset="images/wdd230-medium.jpg">
-          <source media="(max-width: 1100px)" srcset="images/wdd230-large.jpg">
-          <img src="images/wdd230-large.jpg" alt="church">
+          <source media="(max-width: 375px)" srcset="images/cape-chamber-of-commerce-w375.jpg">
+          <source media="(max-width: 780px)" srcset="images/cape-chamber-of-commerce-w600.jpg">
+          <img src="images/cape-chamber-of-commerce-w600.jpg" alt="church">
 
         </picture>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc turpis ligula, laoreet quis facilisis vitae,
-          condimentum quis mi. Duis mollis viverra velit, at gravida lacus lobortis pretium. Maecenas tellus dolor,
-          semper id rhoncus nec, finibus non sem. Integer elit enim, iaculis at dictum facilisis, euismod id diam.
-          Quisque et molestie lacus. Pellentesque fermentum vel sem ut pharetra. Vestibulum sed varius orci. In vel
-          lorem lacus. Aliquam lacus arcu, ullamcorper a neque id, sagittis consequat magna. Praesent vestibulum quam
-          metus, a accumsan purus aliquet sit amet. Aliquam faucibus justo sed consectetur condimentum. Vestibulum
-        </p>
-        <!--<img src="images/tablemountain1100 Alt="A view of Table Mountain">
-        <img class="imgcallToActions" src="images/Cape-Chamber-of-Commerce.jpg" Alt="TThe Cape Chamber">-->
       </div>
     </section>
     <section id="events">
       <h3>Music Events in Cape Town</h3>
       <p>The Novalis Ubuntu Institute Sat July 2 2022 at 07:00 pm</p>
       <img src="images/eventime.gif" Alt="Upcoming Events">
+      <p>All ticket must be bought prior to the event. No tickets will be sold at the door.</p>
     </section>
     <section id="weather">
       <h3>Today's Weather</h3>
-
-
-      <h4>Current Temperature <br> <span id="temperature">45</span> °F </h4>
-      <div class="elfsight-app-b95b4b66-7cb2-4af2-91a0-4ead34acbc01"></div>
+      <p>Temperature: <span id="temperature"></span> °F</p>
+      <p>Wind Speed: <span id="windspeed"></span> MPH</p>
+      <p>Wind Chill: <span id="windchill"></span> °F</p>
       <hr>
-      <div class="windspeedClass">
-        <p>Wind Speed: <span id="windspeed">12</span> MPH</p>
-      </div>
-      <br>
-      <div class="windchillClass">
-        <p>Wind Chill: <span id="windchill"></span> °F </p>
-
-      </div>
-
+      <figure>
+        <img src="#" alt="" id="weather-icon">
+        <figcaption></figcaption>
+      </figure>
+      <hr>
+      <p class="extraweather">Humidity: <span id="Humidity"></span>%</p>
+      <p class="extraweather">High: <span id="Hightemperature"></span>°F</p>
+      <p class="extraweather">Low: <span id="Lowtemperature"></span>°F</p>
     </section>
     <section id="join">
       <a href="join.html">
@@ -139,9 +122,9 @@
     <section id="newsReleases">
       <h3>New Releases</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti voluptas unde consequuntur sint ab enim,
-        quis
-        excepturi cupiditate ex deleniti voluptatibus assumenda commodi. Nostrum illo sit, minima illum reprehenderit
-        animi.</p>
+        quis</p>
+      <!--excepturi cupiditate ex deleniti voluptatibus assumenda commodi. Nostrum illo sit, minima illum reprehenderit
+        animi.-->
       <img class="newsrelease" src="images/newrelease.png" Alt="New Releases">
     </section>
     <section id="threeimagemains">
@@ -156,7 +139,7 @@
       </div>
       <div id="spotLightTwo">
         <h3>Visit Robben Island Today</h3>
-        <img class="sl2image" src="images/robbinislandpic500.jpg" Alt="Robben Island Ad">
+        <!--<img class="sl2image" src="images/robbinislandpic500.jpg" Alt="Robben Island Ad">-->
         <img class="sl21image" src="images/robben-island-madiba.webp" Alt="Images of Madiba">
 
       </div>
@@ -184,7 +167,7 @@
         <p>011-976-4272</p>
 
         <!-- <div class="footmaps"> -->
-        <img src="images/googlemapspin.jpg" alt="Map pin">
+        <img class="imagepin" src="images/googlemapspin.jpg" alt="Map pin">
         <a href="https://www.google.com/maps/" target="_blank">Map Location</a>
         <!-- </div> -->
       </div>
@@ -207,6 +190,9 @@
         .:|:.
         Last
         Updated: <span id="copyrightupdatelarge_lastup"></span></p>
+    </div>
+    <div>
+      <p>Weather service provided by <a href="https://openweathermap.org">OpenWeatherMap</a></p>
     </div>
     <script src="js/footer.js"></script>
   </footer>
