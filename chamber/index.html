@@ -25,6 +25,7 @@
   <script src="https://apps.elfsight.com/p/platform.js" defer></script>-->
   <script src="js/windchill.js" defer></script>
   <script src="js/indexbanner.js" defer></script>
+  <script src="js/weatherapi.js" defer></script>
 
 </head>
 
@@ -117,18 +118,24 @@
       <h3>Today's Weather</h3>
 
 
-      <h4>Current Temperature <br> <span id="temperature">45</span> °F </h4>
+      <h4>Current Temperature <br> <span id="temperature"></span> °F </h4>
       <div class="elfsight-app-b95b4b66-7cb2-4af2-91a0-4ead34acbc01"></div>
       <hr>
       <div class="windspeedClass">
-        <p>Wind Speed: <span id="windspeed">12</span> MPH</p>
+        <p>Wind Speed: <span id="windspeed"></span> MPH</p>
       </div>
       <br>
       <div class="windchillClass">
         <p>Wind Chill: <span id="windchill"></span> °F </p>
 
       </div>
-
+      <div>
+        <h4>Current Condition</h4>
+        <figure>
+          <img src="" alt="" id="weather-icon" />
+          <figcaption></figcaption>
+        </figure>
+      </div>
     </section>
     <section id="join">
       <a href="join.html">
