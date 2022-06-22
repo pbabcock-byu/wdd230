@@ -547,7 +547,7 @@ form textarea {
 
 }
 .membership-form label[for="goldm"], label[for="silverm"] {
-  color: gold;
+  color: rgb(165, 141, 7);
   font-weight: bold;
   font-size: 28px;
 }
