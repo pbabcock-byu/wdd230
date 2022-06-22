@@ -587,6 +587,7 @@ tbody tr:nth-child(7) {
 }
 tbody tr:nth-child(10) {
   background-color: var(--secondary-color);
+  color: white;
 }
 
 .detailedinformation li {
