@@ -465,7 +465,7 @@ header button:hover {
 
 
 #detailedinformation {
-  display: none;
+  display: none;em
 }
 
 #join_head{ /*heading */
@@ -497,7 +497,7 @@ form input:required {
 .information-form { /* all 3 blocks on the page */
   border: 3px solid var(--primary-dark);
   grid-column: 1;
-
+  background: white;
 }
 
 .information-form label{
