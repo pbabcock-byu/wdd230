@@ -462,6 +462,8 @@ header button:hover {
 
 /*Join Page */
 
+
+
 #detailedinformation {
   display: none;
 }
@@ -546,12 +548,14 @@ form textarea {
 }
 .membership-form label[for="goldm"], label[for="silverm"] {
   color: gold;
+  font-weight: bold;
 }
 .membership-form  label[for="silverm"] {
   color: silver;
 }
 .membership-form  label[for="bronzem"] {
   color: rgb(176, 141, 87);
+  font-weight: bold;
 }
 .membership-form  label[for="np"] {
   color: var(--secondary-color);
