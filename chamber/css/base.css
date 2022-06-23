@@ -329,7 +329,7 @@ header button:hover {
 
 .footerbuild a:link {
   color: black;
-  background-cgq olor: transparent;
+  background:transparent; 
   text-decoration: none;
   font-weight: bold;
   font-size: large;
