@@ -28,7 +28,8 @@ function displayBusinessInfo(data) {
     let busAddress  = document.createElement("p");
     let busContactNumer  = document.createElement("p");
     let busEmailAddress  = document.createElement("p");
-    let busWebAddress  = document.createElement("p");
+    //let busWebAddress  = document.createElement("p");
+    let busWebAddress  = document.createElement("a");
     let busWebmemberstatus  = document.createElement("p");
 
     busName.innerHTML = business.businessname;
@@ -49,7 +50,9 @@ function displayBusinessInfo(data) {
 
     busEmailAddress.innerHTML = `📨: ${business.emailaddress}`;
 
-    busWebAddress.innerHTML = `🕸️: ${business.webaddress}`;
+    /*busWebAddress.innerHTML = `🕸️: ${business.webaddress}`; */
+    busWebAddress.textContent = `🕸️: ${business.webaddress}`;
+    busWebAddress.setAttribute("href", business.webaddress);
     busWebAddress.setAttribute("class","webaddress");
 
     busWebmemberstatus.innerHTML = business.membershiplvl;

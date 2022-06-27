@@ -14,7 +14,7 @@ const url = 'https://api.openweathermap.org/data/2.5/weather?lat=-33.9258&lon=18
 fetch(url)
   .then((response) => response.json())
   .then((data) => {
-    console.log(data); // this is temporary for development only
+    //console.log(data); 
 
 
     currentTemp.innerHTML = `<strong>${(data.main.temp * 9/5 + 32).toFixed(2)}</strong>`;
