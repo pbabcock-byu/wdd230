@@ -18,13 +18,11 @@
 
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
-  <!--<link href="https://fonts.googleapis.com/css?family=IM+Fell+French+Canon+SC|Lato" rel="stylesheet"> -->
+
   <link rel="icon" href="images/kp_icon.webp" type="image/x-icon">
 
-  <!-- Script for weather widget (this caused css errors)
-  <script src="https://apps.elfsight.com/p/platform.js" defer></script>-->
+  <script src="js/footer.js" defer></script>
   <script src="js/lazyload.js" defer></script>
-  <script src="js/businessdata.js" defer></script>
 </head>
 
 <body>
@@ -41,9 +39,9 @@
         <ul id="primarynav">
           <li><a href="index.html">Home</a></li>
           <li><a href="discover.html">Discover</a></li>
-          <li><a class="activebutton" href="directory.html">Directory</a></li>
+          <li><a href="directory.html">Directory</a></li>
           <li><a href="join.html">Join</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a class="activebutton" href="contact.html">Contact</a></li>
         </ul>
       </nav>
       <div class="social">
@@ -55,30 +53,124 @@
     <ul id="hamburgernav">
       <li><a href="index.html">Home</a></li>
       <li><a href="discover.html">Discover</a></li>
-      <li><a class="activebutton" href="directory.html">Directory</a></li>
+      <li><a href="directory.html">Directory</a></li>
       <li><a href="join.html">Join</a></li>
-      <li><a href="contact.html">Contact</a></li>
+      <li><a class="activebutton" href="contact.html">Contact</a></li>
     </ul>
     <H2 class="currentdate"></h2>
   </header>
 
 
-  <main>
+  <main id="main_join">
     <div>
-      <h2 id="discoverhead"> Business Directory</h2>
+      <h2 id="join_head">Cape Town Chamber of Commerce Contact Form</h2>
     </div>
 
-    <div id="bdgridListBtns">
-      <button id="bdgridbtn">Display as a Grid</button>
-      <button id="bdlistbtn">Display as a List</button>
-    </div>
 
-    <div id="businesscards" class="businesscards">
-    </div>
+    <form method="get" action="./thankyou.html">
+
+      <div id="contactapp">
+
+
+        <fieldset class="contactapp-form infoform">
+          <legend>Contact Information</legend>
+          <P>* These fields are required to be completed</P>
+          <label for="orgfullname">Full Name* </label>
+          <input type="text" id="orgfullname" required>
+
+          <label for="orgname"> Organization </label>
+          <input type="text" id="orgname">
+
+          <label for="orgmailadd">Mailing Address *</label>
+          <input type="tel" id="orgmailadd" placeholder="123 Address, CT 8228" required>
+
+          <label for="orgphone"> Cell Phone* </label>
+          <input type="tel" id="orgphone" placeholder="(011) 222-3333" required>
+
+          <label for="orgemail"> Email* </label>
+          <input type="email" id="orgemail" placeholder="user@email.org"
+            pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required>
+
+          <label for="contPreference">Contact Preference *</label>
+
+          <select id="contPreference" name="contPreference">
+            <option value="choose">Choose.....</option>
+            <option value="contPrephone">Phone</option>
+            <option value="contPreemail">Email</option>
+            <option value="contPremail">Mail</option>
+          </select>
+
+
+          <label for="qadescription"> Comments/Questions </label>
+          <textarea name="textarea" id="qadescription"></textarea>
+
+          <p>The Cape Town Chamber of Commerce will not sell your contact or email information. In order to serve your
+            request, our office shares information with chamber member businesses who can provide you with additional
+            information. Please indicate below if we may share your request for information:</p>
+
+          <div class="selectionShare">
+            <input type="radio" id="yesShare" name="infoshare" class="infoshare" value="1" checked>
+            <label for="yesShare">Yes, you may release this information. </label>
+
+            <input type="radio" id="noShare" name="infoshare" class="infoshare" value="2">
+            <label for="noShare">No, please do not release this information.</label>
+
+
+          </div>
+          <input type="submit" value="Submit Form" class="selsubformBtn">
+        </fieldset>
+
+
+        <div id="contactapp_text">
+          <h3>----- VISIT US -----</h3>
+          <p>Redding Chamber of Commerce</p>
+          <p>1321 Butte Street, #100</p>
+          <p>Redding, CA 96001</p>
+          <p>Monday – Thursday: 9:00 a.m. to 4:30 p.m.</p>
+          <p>Friday: By Appointment Only</p>
+
+          <h3>----- Our Contacts -----</h3>
+
+          <p>James Mangas</p>
+          <p><strong>President & CEO</strong></p>
+          <p>(011) 222-3344, ext. 100</p>
+          <p>===========</p>
+
+          <p>Angela Hull</p>
+          <p><strong>Director of Marketing & Membership</strong></p>
+          <p>(011) 222-3344, ext. 101</p>
+          <p>===========</p>
+
+
+          <p>Justine Kennedy</p>
+          <p><strong>Operations Assistant</strong></p>
+          <p>(011) 222-3344, ext. 104</p>
+          <p>===========</p>
+
+          <p>Haley Lehman</p>
+          <p><strong>Bookkeeper/Grant Project Manager</strong></p>
+          <p>(011) 222-3344, ext. 104</p>
+          <p>===========</p>
+
+
+
+        </div>
+
+
+      </div>
+
+      <div>
+
+
+
+      </div>
+
+    </form>
   </main>
 
+
   <footer>
-    <div class="footerbuild">
+    <div class=" footerbuild">
       <div class="footerlogo">
         <img src="images/za-gt-kp2.jpg" alt="Cape Town City flag.">
         <section class="footerheadings">
@@ -116,7 +208,7 @@
         Last
         Updated: <span id="copyrightupdatelarge_lastup"></span></p>
     </div>
-    <script src="js/footer.js"></script>
+
   </footer>
 </body>
 
