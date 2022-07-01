@@ -33,12 +33,13 @@
     display: flex;
   }
 
-  #weather .elfsight-app-b95b4b66-7cb2-4af2-91a0-4ead34acbc01{
-    
-    margin-left: 10%;
-    margin-right: 10%;
+  
 
-  }
+  #callToAction a{
+
+    padding: 3px;
+
+  } 
   #threeimagemains {
     margin-bottom: 0%;
   }
@@ -183,9 +184,10 @@
 .subappBtnsm {
   display: none;
 }
-#subappBtn{
+.subappBtn{
   display: block;
 }
+
 
 /*Directory page */
 
