@@ -1,0 +1,378 @@
+@media only screen and (min-width: 760px) {
+
+  /*body {
+    background-color: yellow;
+  }*/
+
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 24px;
+  }
+  h3{
+    font-size: 20px;
+  }
+  
+  header, main, nav, .contactinfo, .basefooter {
+    max-width: 730px;
+  }
+
+/* Nav links  */
+
+.primarynavbar li:first-child { 
+  display: none;	
+}
+
+.primarynavbar li{
+  display: inline-block;
+}
+
+
+
+nav {
+  font-size: 1em;
+  line-height: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  padding: 0px;
+}
+
+
+
+
+
+/* NAVIGATION */
+
+.primarynavbar li:first-child {
+  display: none;
+}
+
+.primarynavbar li {
+  display: inline-block;
+}
+
+.primarynavbar ul {
+  display: flex;
+  flex-direction: row;
+}
+
+.primarynavbar a {
+  text-decoration: none;
+  font-size: 1.5em;            
+  width: 90%;
+  padding: 1rem;
+}    
+
+
+
+/* HEADER BUILD */
+
+header .mainheader {
+  display: flex;
+}
+
+header h1 {
+  text-align: center;
+  margin-top: 18%;
+  padding: 0%;
+  padding-left: 1%;
+}
+
+header img {
+  margin: 3%;
+  width: 250px;
+}
+
+
+
+/* footer - nothing*/
+.contactinfo {
+  display: flex;
+}
+
+
+.tiafooternamelogo {
+  padding-left: 5%;
+}
+.tiafooternamelogo img {
+  display:inline;
+}
+.tisocialmedia {
+  margin-top: 30px;
+  margin-left: 10%;
+  text-align: center;
+
+}
+
+.tiaddress {
+  margin-top: 20px;
+  margin-left: 10%;
+
+}
+
+/* Index page */
+
+.ourgoal {
+  font-size: 1.5rem;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 50px;
+  border-radius: 15px 50px;
+}
+
+.midcomments{
+  font-size: 1.5rem;
+  width: 70%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 50px;
+  border-radius: 25px;
+}
+
+.mainrepimg_rel{
+  position: relative;
+}
+.mainrecpimg {
+  margin-bottom: 2%;
+  
+  width: 100%;
+}
+.indexbutton {
+  position: absolute;
+  width: 10%;
+  left: 60%;
+  top: 53%;
+  padding: 25px;
+  border-radius: 15px;
+  border: 5px solid var(--infotxt-color);
+}
+
+.weathergrid {
+  background-color:var(--infoblocks-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.1fr 2fr ;
+  text-align: center;
+  margin-top: 1%;
+}
+
+.testhead {
+  grid-column: 2/5;
+  grid-row: 1;
+}
+.maincurrentweather {
+  grid-column: 1 ;
+  grid-row: 1 / 3;
+}
+.weatherclassdayname1 {
+  grid-row: 2;
+  grid-column: 2;
+
+}
+
+.weatherclassdayname2 {
+  grid-row: 2;
+  grid-column: 3;
+
+}
+.weatherclassdayname3 {
+  grid-row: 2;
+  grid-column: 4;
+
+}
+
+
+/* Temple Page */
+.templecards {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.templecards img {
+  width: 94%;
+}
+
+/*Services Page */
+
+
+.serviceimg {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 2%;
+  margin-left: 10%;
+  width: 80%;
+}
+
+
+.serviceimg1 {
+  display: block;
+}
+
+.freeamenities {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+
+.freeamenities li {
+  text-align: left;
+  line-height: 2rem;
+}
+.freeamenities img{
+  width: 95%;
+}
+
+
+.specializedservices{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 0.5fr 1fr;
+}
+.specializedservices li {
+  text-align: left;
+  line-height: 2rem;
+  grid-row: 1;
+
+}
+
+.specializedservices img{
+  width: 90%;
+  margin-top: 10%;
+
+
+}
+.ssimages{
+  display: block;
+  grid-row: 2;
+}
+
+
+.ssbuttons , .sssimages{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1%;
+}
+
+
+.ssbutton1,.ssbutton2  {
+  width: 80%;
+  text-decoration: none;
+  padding: 9px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: var(--secondaryblocks-color);
+  color: black;
+}
+
+.ssbutton1:hover , .ssbutton2:hover{
+  color: var(--secondaryblocks-color);
+  background-color: var(--primarytxt-color);
+}
+
+.sssimages1,.sssimages2 {
+  display: block;
+  width: 80%;
+}
+
+/* Receptions Page */
+.receptionimg {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 2%;
+  margin-left: 8%;
+  width: 70%;
+}
+.receptionimg img {
+  width: 98%;
+}
+.recpheading {
+  grid-row: 1;
+  grid-column: 1/4;
+}
+
+.receptionimg1 {
+  display: grid;
+  grid-row: 2;
+  grid-column: 1 / 2;
+}
+.receptionimg2 {
+  grid-row: 2;
+  grid-column: 2/3;
+}
+.receptionimg3 {
+  display: grid;
+  grid-row: 2;
+  grid-column: 3 / 4;
+}
+
+
+.receptionfood {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 2%;
+  margin-left: 8%;
+  width: 70%;
+}
+.receptionfood img {
+  width: 98%;
+}
+.recpfoodheading {
+  grid-row: 1;
+  grid-column: 1/5;
+}
+
+.receptionfoodimg1 {
+display: grid;
+}
+.receptionfoodimg2 {
+  display: none;
+  } 
+
+.receptioncake {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  margin: 2%;
+  margin-left: 8%;
+  width: 70%;
+}
+.receptioncake img {
+  width: 98%;
+}
+.recpheading {
+  grid-row: 1;
+  grid-column: 1/4;
+}
+
+.receptioncakeimg1 {
+  display: none;
+}
+.receptioncakeimg2 {
+  display: none;
+
+}
+.receptioncakeimg3 {
+  display: none;
+}
+.receptioncakeimg4 {
+  display: grid;
+  grid-row: 3;
+  grid-column: 1/2;
+}
+.receptioncakeimg5 {
+display: none;
+}
+.receptioncakeimg6 {
+  grid-row: 3;
+  grid-column: 2/3;
+}
+
+
+}/* Need this to close the medium.NOT CODE AFTER THIS!!!*/ 

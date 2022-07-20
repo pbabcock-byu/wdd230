@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Temple Inn & Suites is a hotel chain headquartered in B
+  ethesda, MD that builds and manages specialized hotel accommodations near temple locations of 
+  The Church of Jesus Christ of Latter-day Saints around the world. The owner-operated company caters to 
+  temple workers, patrons, and their families by providing specialized services and accommodations 
+  that meet the needs of those patrons. The hotel accommodations and services are available 
+  to anyone willing to abide by the terms and policies outlined by the company.">
+  <title>Temple Inn & Suites</title>
+
+  <link rel="stylesheet" href="css/normalize.css" type="text/css">
+  <link rel="stylesheet" href="css/base.css" type="text/css">
+  <link rel="stylesheet" href="css/medium.css" type="text/css">
+  <link rel="stylesheet" href="css/large.css" type="text/css">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
+
+  <!-- The Icon-->
+  <link rel="icon" href="images/tis_icon.webp" type="image/x-icon">
+  <!-- JS scripts-->
+  <script src="js/navmenu.js" defer></script>
+  <script src="js/footer.js" defer></script>
+  <script src="js/weatherapi.js" defer></script>
+  <script src="js/lazyload.js" defer></script>
+  <script src="js/weatheralert.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <div class="mainheader">
+      <img src="images/ti_logo_w600.jpg" alt="Temple Inn and Suites Logo" width="250">
+      <h1> The Temple Inn and Suites</h1>
+    </div>
+
+    <nav>
+      <ul class="primarynavbar">
+        <li class="menubutton"><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="index.html" class="activepage">Home</a></li>
+        <li><a href="temples.html">Temples</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="reservations.html">Reservations</a></li>
+        <!--<li><a href="contact.html">Contact Us</a></li>-->
+      </ul>
+    </nav>
+
+    <H2 class="currentdate"></h2>
+
+    <section id="weatheralert">
+      <div class="walert">
+        <h2>WARNING DANGEROUS WEATHER ALERT</h2>
+        <button id="closems">X</button>
+      </div>
+    </section>
+
+
+
+  </header>
+
+
+  <main>
+    <div class="ourgoal">
+      <h2>Welcome to the Temple Inn and Suites</h2>
+      <p>Our goal at the Temple Inn and Suites is to help you focus on your temple experience by removing as
+        many distractions as possible. We provide service like shuttles to and from the temple, babysitting services,
+        recretional activites for youth just to name a few. We will ensure you enjoy your stay with us! . </p>
+    </div>
+
+    <div class="mainrepimg_rel">
+      <a href="reservations.html" class="indexbutton">Make a Reservation</a>
+      <picture>
+        <source media="(min-width:1000px)" srcset="images/receptions.webp">
+        <source media="(min-width:760px)" srcset="images/receptions_w760.jpg">
+        <img src="images/receptions_w375.jpg" alt="reception area" class="mainrecpimg">
+      </picture>
+
+    </div>
+
+    <div class="maingrid">
+      <h3 class="tempmonth infotxt">Our feature Temple of the Month</h3>
+      <picture>
+        <source media="(min-width:1000px)" srcset="images/johannesburg_south_africa_temple_lds_w375.jpg">
+        <source media="(min-width:760px)" srcset="images/johannesburg_south_africa_temple_lds_w760.jpg">
+        <img src="images/johannesburg_south_africa_temple_lds2_w375.jpg"
+          alt="LDS Temple in Johannesburg South Africa Temple">
+      </picture>
+      <div class="featuretext infotxt">
+        <h4>Johannesburg South Africa Temple</h4>
+        <p>Plans to construct the temple were announced 1 April 1981, Church leaders broke ground 27
+          November 1982, and
+          President Gordon B. Hinckley, then a counselor in the First Presidency of The Church of Jesus Christ of
+          Latter-day Saints, dedicated the Johannesburg South Africa Temple 24 August 1985. The temple serves
+          Latter-day
+          Saints in southern Africa.</p>
+      </div>
+
+    </div>
+
+    <div>
+
+    </div>
+    <div class="weathergrid">
+      <div class="maincurrentweather">
+        <h4>Today's Weather Conditions</h4>
+        <section id="weather">
+
+          <p>Temperature: <span id="temperature"></span> °F</p>
+          <p>Wind Speed: <span id="windspeed"></span> MPH</p>
+          <p class="extraweather">Humidity: <span id="Humidity"></span>%</p>
+
+          <figure>
+            <img src="#" alt="" id="weather-icon">
+            <figcaption></figcaption>
+          </figure>
+
+        </section>
+      </div>
+      <div class="testhead">
+        <h4>Three Day Weather forecast</h4>
+      </div>
+      <div class=" weatherclassdayname1">
+        <p>Weather for <span id="weatherdayname1"></span> is </p>
+        <p id="descday1"></p>
+        <figure>
+          <img src="#" alt="" id="weather-iconday1">
+        </figure>
+        <p>High:<span id="weathertemphi_1"></span> °F</p>
+        <p>Low:<span id="weathertemplow_1"></span> °F</p>
+      </div>
+
+      <div class="weatherclassdayname2">
+        <p>Weather for <span id="weatherdayname2"></span> is </p>
+        <p id="descday2"></p>
+        <figure>
+          <img src="#" alt="" id="weather-iconday2">
+        </figure>
+        <p>High:<span id="weathertemphi_2"></span> °F</p>
+        <p>Low:<span id="weathertemplow_2"></span> °F</p>
+      </div>
+
+      <div class="weatherclassdayname3">
+        <p>Weather for <span id="weatherdayname3"></span> is </p>
+        <p id="descday3"></p>
+        <figure>
+          <img src="#" alt="" id="weather-iconday3">
+        </figure>
+        <p>High:<span id="weathertemphi_3"></span> °F</p>
+        <p>Low:<span id="weathertemplow_3"></span> °F</p>
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <footer>
+
+    <div class="contactinfo">
+
+
+      <div class="tiafooternamelogo">
+        <h3>The Temple Inn and Suites</h3>
+        <img src="images/ti_logo_w375.jpg" alt="Temple Inn and Suites Logo" height="150">
+      </div>
+
+      <div class="tiaddress">
+        <p>🏨 4800 Montgomery Ln #300</p>
+        <p>Bethesda, MD 20814</p>
+        <p>📞 123 456 7890</p>
+        <p>📨:bookings@templeinn.com</p>
+        <a
+          href="https://www.google.com/maps/place/4800+Montgomery+Ln,+Bethesda,+MD+20814/@38.9816099,-77.1185768,13z/data=!4m5!3m4!1s0x89b7c97b6b3b5b43:0xceab47cd19a23a3b!8m2!3d38.9832518!4d-77.0955318">
+          📍 Location on Map
+        </a>
+      </div>
+
+      <div class="tisocialmedia">
+        <h3>Check us out on Social Media</h3>
+        <a href="https://www.facebook.com"><img src="images/facebook.png" alt="Follow us on Facebook"></a>
+        <a href="https://www.instagram.com"><img src="images/instagram.png" alt="Follow us on Instagram"></a>
+        <a href="https://www.pinterest.com"><img src="images/pinterest.png" alt="Follow us on Pinterest"></a>
+        <a href="https://www.twitter.com"><img src="images/twitter.png" alt="Follow us on Twitter"></a>
+      </div>
+
+
+    </div>
+    <div class="basefooter">
+      <div class="copyrightupdatelarge">
+        <p>&copy; <span id="copyrightupdate_year"></span> Temple Inn and Suites -*|*- Peter Babcock -*|*- WDD
+          230 Project
+          -*|*-
+          This project was last modified: <span id="copyrightupdate"></span>
+          -*|*-
+          <a href="resources.html">Resources Used</a> </p>
+        Weather service provided by <a href="https://openweathermap.org">OpenWeatherMap</a>
+
+      </div>
+    </div>
+
+  </footer>
+
+
+</body>
+
+</html>

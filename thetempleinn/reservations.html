@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Temple Inn & Suites is a hotel chain headquartered in B
+  ethesda, MD that builds and manages specialized hotel accommodations near temple locations of 
+  The Church of Jesus Christ of Latter-day Saints around the world. The owner-operated company caters to 
+  temple workers, patrons, and their families by providing specialized services and accommodations 
+  that meet the needs of those patrons. The hotel accommodations and services are available 
+  to anyone willing to abide by the terms and policies outlined by the company.">
+  <title>Temple Inn & Suites</title>
+
+  <link rel="stylesheet" href="css/normalize.css" type="text/css">
+  <link rel="stylesheet" href="css/base.css" type="text/css">
+  <link rel="stylesheet" href="css/medium.css" type="text/css">
+  <link rel="stylesheet" href="css/large.css" type="text/css">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
+
+  <!-- The Icon-->
+  <link rel="icon" href="images/tis_icon.webp" type="image/x-icon">
+  <!-- JS scripts-->
+  <script src="js/navmenu.js" defer></script>
+  <script src="js/footer.js" defer></script>
+  <script src="js/lazyload.js" defer></script>
+
+</head>
+<header>
+  <div class="mainheader">
+    <img src="images/ti_logo_w600.jpg" alt="Temple Inn and Suites Logo" width="250">
+    <h1> The Temple Inn and Suites</h1>
+  </div>
+
+  <nav>
+    <ul class="primarynavbar">
+      <li class="menubutton"><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="temples.html">Temples</a></li>
+      <li><a href="services.html">Services</a></li>
+      <li><a href="reservations.html" class="activepage">Reservations</a></li>
+      <!--<li><a href="contact.html">Contact Us</a></li>-->
+    </ul>
+  </nav>
+
+
+</header>
+
+
+<main>
+
+  <div class="ourgoal">
+    <h2>Make your reservation</h2>
+    <P>Please note all fields are required to be completed<BR> in order for us to process your reservation </P>
+  </div>
+  <form class=formresv" method="get" action="reservationsconfirmed.html">
+
+
+    <!--location, date, number and type of rooms-->
+
+
+    <fieldset class="ourgoal">
+      <h3>Find a Hotel Location</h3>
+      <label class="reservationoption">Select Hotel Location
+        <select name="templehotel" required>
+          <option value="" selected disabled> Select Your Temple location </option>
+          <option value="reservationtemple1">Praia Cape Verde Temple</option>
+          <option value="reservationtemple2">Yigo Guam Temple</option>
+          <option value="reservationtemple3">Rio de Janeiro Brazil Temple</option>
+          <option value="reservationtemple4">Pocatello Idaho Temple</option>
+        </select>
+      </label>
+
+      <label class="reservationinput">Check In<input type="date" id="reservationstart" name="reservationstart"
+          required /></label>
+      <label class="reservationinput">Check Out<input type="date" id="reservationend" name="reservationend"
+          required /></label>
+
+      <label class="reservationoption">How many rooms will you need?
+        <select name="reservationtotalnumber" required>
+          <option value="" selected disabled>Select a number</option>
+          <option value="reservationtotalnumber1">1</option>
+          <option value="reservationtotalnumber2">2</option>
+          <option value="reservationtotalnumber3">3</option>
+          <option value="reservationtotalnumber4">4</option>
+          <option value="reservationtotalnumber5">5</option>
+          <option value="reservationtotalnumber6">6</option>
+        </select></label>
+
+      <label class="reservationoption">Select a Room
+        <select name="reservationtotalroomtype" required>
+          <option value="" selected disabled>Select a number</option>
+          <option value="reservationtotalroomtype1">1 King Bed</option>
+          <option value="reservationtotalroomtype2">1 King Bed Deluxe Room</option>
+          <option value="reservationtotalroomtype3">1 King Bed Junior Suite</option>
+          <option value="reservationtotalroomtype4">2 Queen Beds</option>
+          <option value="reservationtotalroomtype5">1 Family room sleeps 6</option>
+          <option value="reservationtotalroomtype6">1 Family room sleeps 4 with Kitchen net</option>
+          <option value="reservationtotalroomtype7">1 King Bed Suite with Kitchen net</option>
+        </select></label>
+    </fieldset>
+
+    <fieldset class="ourgoal">
+      <h3>Guest information</h3>
+      <label class="reservationinput">Full Name
+        <input type="text" name="reservationfullname" placeholder="Fred Flintstone" required />
+      </label>
+      <label class="reservationinput">Email Address
+        <input type="email" name="reservationemail" placeholder="bookings@templeinn.com"
+          pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required />
+      </label>
+      <label class="reservationinput">Contact Number
+        <input type="tel" name="reservationphone" placeholder="123 456 7890" required />
+      </label>
+      <label class="reservationinput">State and/or Country<input type="text" name="bname"
+          placeholder="Cape Town, South Africa" required />
+      </label>
+      <label>Special accommodations Requests
+        <textarea name="reservationrequests" rows="8"
+          placeholder="Please list any special accommodations or requirements you might have.">
+        </textarea>
+      </label>
+    </fieldset>
+
+    <fieldset class="ourgoal">
+      <h3>Guarantee and Cancellation Policy</h3>
+      <p>
+        Free cancellation up to 5 days before Check in.<br>
+        <br>
+        At check in, the front desk will verify your check-out date. Rates quoted are based on check-in date and
+        length of stay. Should you choose to depart early, price is subject to change.<br>
+        <br>
+        We reserve the right to cancel or modify reservations where it appears that a customer has engaged in
+        fraudulent or inappropriate activity or under other circumstances where it appears that the reservations contain
+        or resulted from a mistake or error.<br>
+      </p>
+
+      <input type="submit" value="Book Reservation" class="reservationbuttons" />
+    </fieldset>
+  </form>
+
+</main>
+
+
+<footer>
+
+  <div class="contactinfo">
+
+
+    <div class="tiafooternamelogo">
+      <h3>The Temple Inn and Suites</h3>
+      <img src="images/ti_logo_w375.jpg" alt="Temple Inn and Suites Logo" height="150">
+    </div>
+
+    <div class="tiaddress">
+      <p>🏨 4800 Montgomery Ln #300</p>
+      <p>Bethesda, MD 20814</p>
+      <p>📞 123 456 7890</p>
+      <p>📨:bookings@templeinn.com</p>
+      <a
+        href="https://www.google.com/maps/place/4800+Montgomery+Ln,+Bethesda,+MD+20814/@38.9816099,-77.1185768,13z/data=!4m5!3m4!1s0x89b7c97b6b3b5b43:0xceab47cd19a23a3b!8m2!3d38.9832518!4d-77.0955318">
+        📍 Location on Map
+      </a>
+    </div>
+
+    <div class="tisocialmedia">
+      <h3>Check us out on Social Media</h3>
+      <a href="https://www.facebook.com"><img src="images/facebook.png" alt="Follow us on Facebook"></a>
+      <a href="https://www.instagram.com"><img src="images/instagram.png" alt="Follow us on Instagram"></a>
+      <a href="https://www.pinterest.com"><img src="images/pinterest.png" alt="Follow us on Pinterest"></a>
+      <a href="https://www.twitter.com"><img src="images/twitter.png" alt="Follow us on Twitter"></a>
+    </div>
+
+
+  </div>
+  <div class="basefooter">
+    <div class="copyrightupdatelarge">
+      <p>&copy; <span id="copyrightupdate_year"></span> Temple Inn and Suites -*|*- Peter Babcock -*|*- WDD
+        230 Project
+        -*|*-
+        This project was last modified: <span id="copyrightupdate"></span>
+        -*|*-
+        <a href="resources.html">Resources Used</a> </p>
+      Weather service provided by <a href="https://openweathermap.org">OpenWeatherMap</a>
+
+    </div>
+  </div>
+
+</footer>
+
+
+</body>
+
+</html>

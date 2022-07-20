@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="The Temple Inn & Suites is a hotel chain headquartered in B
+  ethesda, MD that builds and manages specialized hotel accommodations near temple locations of 
+  The Church of Jesus Christ of Latter-day Saints around the world. The owner-operated company caters to 
+  temple workers, patrons, and their families by providing specialized services and accommodations 
+  that meet the needs of those patrons. The hotel accommodations and services are available 
+  to anyone willing to abide by the terms and policies outlined by the company.">
+  <title>Temple Inn & Suites</title>
+
+  <link rel="stylesheet" href="css/normalize.css" type="text/css">
+  <link rel="stylesheet" href="css/base.css" type="text/css">
+  <link rel="stylesheet" href="css/medium.css" type="text/css">
+  <link rel="stylesheet" href="css/large.css" type="text/css">
+
+
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,700" rel="stylesheet">
+
+  <!-- The Icon-->
+  <link rel="icon" href="images/tis_icon.webp" type="image/x-icon">
+  <!-- JS scripts-->
+  <script src="js/navmenu.js" defer></script>
+  <script src="js/footer.js" defer></script>
+  <script src="js/lazyload.js" defer></script>
+
+</head>
+<header>
+  <div class="mainheader">
+    <img src="images/ti_logo_w600.jpg" alt="Temple Inn and Suites Logo" width="250">
+    <h1> The Temple Inn and Suites</h1>
+  </div>
+
+  <nav>
+    <ul class="primarynavbar">
+      <li class="menubutton"><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="temples.html">Temples</a></li>
+      <li><a href="services.html" class="activepage">Services</a></li>
+      <li><a href="reservations.html">Reservations</a></li>
+      <!--<li><a href="contact.html">Contact Us</a></li>-->
+    </ul>
+  </nav>
+
+
+</header>
+
+
+<main>
+
+  <div class="ourgoal">
+    <h2>Extended Stay Options</h2>
+    <P>Temple Inn and Suites offers a clean, fully furnished studio at an affordable price. In addition to
+      the typical hotel furniture, our rooms include a full size refrigerator/freezer, microwave, two-burner stovetop
+      and ample cabinet space. Safety is a priority at our hotels with no exterior room doors, eight cameras and a
+      well-lit parking lot. Our interior-corridor entrances can only be accessed with a valid key card offering a
+      restful, pleasant hotel experience. Our friendly staff is available 24/7 for anything from items needed for your
+      room to directions to a nearby tourist attraction. Our staff takes great pride in the cleanliness of the rooms and
+      hotel. </P>
+  </div>
+
+
+
+  <div class="ourgoal">
+    <h3>Extended Stay FEATURES</h3>
+    <div class="Extendedstays">
+      <div class="Extendedstayskitchen">
+        <img src="images/Kitchen.png" alt="kitched symbol">
+        <p>Kitchen: Full-size kitchen with freezer, two-burner stovetop, Microwave Oven</p>
+      </div>
+      <div class="Extendedstayskitchen">
+        <img src="images/Suites1.png" alt="bed symbol">
+        <p>Suites: Full-size bed(s) and bedding, Dresser and Nightstand, Color TV with cable and minimum one premium
+          movie channel, Dining table with two chairs, Sofa bed (Studio with Sofa Sleeper only), Coffee table (Studio
+          with Sofa Sleeper only)</p>
+      </div>
+      <div class="Extendedstayskitchen">
+        <img src="images/Additional.png" alt="Pot symbol">
+        <p>Additional Benefits: Housekeeping every two weeks, Secured interior-corridor access, vending machines,
+          24-hour on-site laundry facilities</p>
+      </div>
+      <div class="Extendedstayskitchen">
+        <img src="images/optional.png" alt="Drink symbol">
+        <p>Optional Amenities: Linen Exchange, Internet, Additional Housekeeping, Dish Pack, High-speed internet</p>
+      </div>
+    </div>
+
+
+
+
+
+
+  </div>
+  <div class="Extendedstay ourgoal">
+    <div class="Extendedstayimages">
+      <h2>Images of our Rooms and Amenities</h2>
+      <p>Make yourself at home in our great value Suites</p>
+    </div>
+    <div class="Extendedstayimages1">
+      <img src="images/longtermstayopbed.jpg" alt="Wedding Cake 1">
+    </div>
+    <div class="Extendedstayimages2">
+      <img src="images/longtermstaykitchen.jpg" alt="Wedding Cake 2">
+    </div>
+    <div class="Extendedstayimages3">
+      <img src="images/longtermstaylaundry.jpg" alt="Wedding Cake 3">
+    </div>
+    <div class="Extendedstayimages3">
+      <img src="images/poolside.webp" alt="Out door activites"">
+    </div>
+    <div class=" Extendedstayimages3">
+      <img src="images/gym.jfif" alt="Indoor Gym">
+    </div>
+    <!--
+    <div class="Extendedstayimages1">
+      <img src="images/weddingcake6.webp" alt="Wedding Cake 6">
+    </div>-->
+  </div>
+  <form class=formresv" method="get" action="weddingfeedback.html">
+    <fieldset class="ourgoal">
+      <h2>Lets have a discussion</h2>
+      <p>If you have questions or would like to have a more in dept discussion, you can either call or visit us using
+        the details at the bottom of this page or fill in the below form and we will get right back to you</p>
+      <label class="reservationinput">Full Name
+        <input type="text" name="reservationfullname" placeholder="Fred Flintstone" required />
+      </label>
+      <label class="reservationinput">Email Address
+        <input type="email" name="reservationemail" placeholder="bookings@templeinn.com"
+          pattern="^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$" required />
+      </label>
+      <label class="reservationinput">Contact Number
+        <input type="tel" name="reservationphone" placeholder="123 456 7890" required />
+      </label>
+      <label class="reservationinput">State and/or Country<input type="text" name="bname"
+          placeholder="Cape Town, South Africa" required />
+      </label>
+      <label>Comments
+        <textarea name="reservationrequests" rows="10"
+          placeholder="Please list any special accommodations or requirements you might have.">
+        </textarea>
+      </label>
+
+      <input type="submit" value="Book Reservation" class="reservationbuttons" />
+    </fieldset>
+
+  </form>
+</main>
+
+
+<footer>
+
+  <div class="contactinfo">
+
+
+    <div class="tiafooternamelogo">
+      <h3>The Temple Inn and Suites</h3>
+      <img src="images/ti_logo_w375.jpg" alt="Temple Inn and Suites Logo" height="150">
+    </div>
+
+    <div class="tiaddress">
+      <p>🏨 4800 Montgomery Ln #300</p>
+      <p>Bethesda, MD 20814</p>
+      <p>📞 123 456 7890</p>
+      <p>📨:bookings@templeinn.com</p>
+      <a
+        href="https://www.google.com/maps/place/4800+Montgomery+Ln,+Bethesda,+MD+20814/@38.9816099,-77.1185768,13z/data=!4m5!3m4!1s0x89b7c97b6b3b5b43:0xceab47cd19a23a3b!8m2!3d38.9832518!4d-77.0955318">
+        📍 Location on Map
+      </a>
+    </div>
+
+    <div class="tisocialmedia">
+      <h3>Check us out on Social Media</h3>
+      <a href="https://www.facebook.com"><img src="images/facebook.png" alt="Follow us on Facebook"></a>
+      <a href="https://www.instagram.com"><img src="images/instagram.png" alt="Follow us on Instagram"></a>
+      <a href="https://www.pinterest.com"><img src="images/pinterest.png" alt="Follow us on Pinterest"></a>
+      <a href="https://www.twitter.com"><img src="images/twitter.png" alt="Follow us on Twitter"></a>
+    </div>
+
+
+  </div>
+  <div class="basefooter">
+    <div class="copyrightupdatelarge">
+      <p>&copy; <span id="copyrightupdate_year"></span> Temple Inn and Suites -*|*- Peter Babcock -*|*- WDD
+        230 Project
+        -*|*-
+        This project was last modified: <span id="copyrightupdate"></span>
+        -*|*-
+        <a href="resources.html">Resources Used</a> </p>
+      Weather service provided by <a href="https://openweathermap.org">OpenWeatherMap</a>
+
+    </div>
+  </div>
+
+</footer>
+
+
+</body>
+
+</html>

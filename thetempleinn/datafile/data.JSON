@@ -1,0 +1,166 @@
+{
+  "temples": 
+  [
+    {
+      "name": "Praia Cape Verde Temple",
+      "address": 
+                [
+                  "Avenida Cidade de Lisboa", 
+                  "Bairro Taiti", 
+                  "7600 Praia, São Tiago, Cape Verde"
+                ],
+      "contactinfo": 
+      {
+        "phone": "Not currently Avaiable",
+        "email": "https://www.churchofjesuschrist.org/temples/details/praia-cape-verde-temple?lang=eng"
+      },
+      "services" : 
+                  [
+                    "No clothing rental available",
+                    "No cafeteria available",
+                    "No patron housing available",
+                    "Distribution center nearby"
+                  ],
+      "milestones": 
+                  {
+                    "announced": "7 October 2018",
+                    "groundbreaking": "4 May 2019",
+                    "dedicated": "19 June 2022"
+                  },
+      "ordinanceschedule": "https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng",
+      "sessionschedule": "https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng",
+      "closures": 
+                [
+                  "Monday, 5 September 2022 - Monday, 19 September 2022",
+                  "Saturday, 24 December 2022 - Sunday, 25 December 2022",
+                  "Saturday, 31 December 2022",
+                  "Monday, 22 May 2023 - Monday, 5 June 2023",
+                  "Monday, 6 November 2023 - Tuesday, 21 November 2023"
+                ],
+      "imageurl": "images/praia_cape_verde_temple.jpeg"
+    },
+
+    {
+      "name": "Yigo Guam Temple",
+      "address": 
+                [
+                  "321 Chalan Pale Ramon Lagu, Rte 1", 
+                  "Yigo 96929", 
+                  "Guam"
+                ],
+      "contactinfo": 
+      {
+        "phone": "(1) 671-969-0055",
+        "email": "https://www.churchofjesuschrist.org/temples/details/yigo-guam-temple?lang=eng"
+      },
+      "services" : 
+                  [
+                    "No clothing rental available",
+                    "No cafeteria available",
+                    "Patron housing available",
+                    "No distribution center nearby"
+                  ],
+      "milestones": 
+                  {
+                    "announced": "7 October 2018",
+                    "groundbreaking": "4 May 2019",
+                    "dedicated": "22 May 2022"
+                  },
+      "ordinanceschedule": "https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng",
+      "sessionschedule": "https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng",
+      "closures": 
+                [
+                  "Thursday, 21 July 2022",
+                  "Monday, 5 September 2022 - Monday, 19 September 2022",
+                  "Saturday, 8 October 2022",
+                  "Friday, 11 November 2022",
+                  "Thursday, 24 November 2022",
+                  "Saturday, 24 December 2022",
+                  "Saturday, 24 December 2022",
+                  "Saturday, 31 December 2022"
+                ],
+      "imageurl": "images/yigo_guam_temple.jpeg"
+     },
+
+     {
+      "name": "Rio de Janeiro Brazil Temple",
+      "address": 
+                [
+                  "Avenida Das Américas, Nº 9005",
+                  "CEP 22793-083 Barra Da Tijuca - Rio De Janeiro - RJ",  
+                  "Brazil"
+                ],
+      "contactinfo": 
+        {
+        "phone": "(55) 21-3906-4600",
+        "email": "https://www.churchofjesuschrist.org/temples/details/rio-de-janeiro-brazil-temple?lang=eng"
+        },
+      "services" : 
+                  [
+                    "No clothing rental available",
+                    "No cafeteria available",
+                    "Patron housing available",
+                    "No distribution center nearby"
+                  ],
+      "milestones": 
+                  {
+                    "announced": "6 April 2013",
+                    "groundbreaking": "4 March 2017",
+                    "dedicated": "8 May 2022"
+                  },
+      "ordinanceschedule": "https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng",
+      "sessionschedule": "https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng",
+      "closures": 
+                [
+                  "Saturday, 1 October 2022 - Sunday, 2 October 2022",
+                  "Monday, 17 October 2022 - Monday, 31 October 2022",
+                  "Saturday, 24 December 2022 - Sunday, 25 December 2022",
+                  "Saturday, 31 December 2022 - Sunday, 1 January 2023",
+                  "Monday, 3 April 2023 - Monday, 17 April 2023",
+                  "Monday, 3 April 2023 - Monday, 17 April 2023"
+                ],
+      "imageurl": "images/rio_de_janeiro_brazil_temple.jpeg"
+     },
+
+     {
+      "name": "Pocatello Idaho Temple",
+      "address": 
+                [
+                  "3100 Butte St",
+                  "Pocatello ID 83201",  
+                  "United States"
+                ],
+      "contactinfo": 
+        {
+        "phone": "(1) 208-646-7730",
+        "email": "https://www.churchofjesuschrist.org/temples/details/pocatello-idaho-temple?lang=eng"
+        },
+      "services" : 
+                  [
+                    "Clothing rental available",
+                    "No cafeteria available",
+                    "No patron housing available",
+                    "No distribution center nearby"
+                  ],
+      "milestones": 
+                  {
+                    "announced": "2 April 2017",
+                    "groundbreaking": "16 March 2019",
+                    "dedicated": "7 November 2021"
+                  },
+      "ordinanceschedule": "https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng",
+      "sessionschedule": "https://www.churchofjesuschrist.org/temples/schedule/appointment?lang=eng",
+      "closures": 
+                [
+                  "Saturday, 1 October 2022",
+                  "Monday, 31 October 2022 - Monday, 14 November 2022",
+                  "Wednesday, 23 November 2022 (Limited Operations)",
+                  "Thursday, 24 November 2022",
+                  "Saturday, 24 December 2022",
+                  "Saturday, 31 December 2022 (Limited Operations)"
+                ],
+      "imageurl": "images/pocatello_idaho_temple.jpeg"
+     }
+
+  ]
+}

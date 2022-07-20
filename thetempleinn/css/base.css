@@ -1,0 +1,614 @@
+:root {
+  
+  --bodybackground-color: darkgray;
+
+  --primaryblocks-color:#295982;
+  --secondaryblocks-color:#AEBEBE;;
+
+  --infoblocks-color:	#D6DBDB;
+
+  --primary-color:#FCF6F5FF;
+  --secondary-color: #466EC3;
+
+
+  --mbfbackground-color:#98c1d9; 
+  
+  
+  --primarytxt-color: #293241;
+  --secondarytxt-color:white;
+  --infotxt-color: brown;
+
+
+  --textbackground-color: #D6DBDB;
+
+
+
+  /* Possible Fonts to use on page */
+  --heading-font: "Merriweather", serif;
+  /*--heading-font: "Verdana", Geneva, sans-serif;  */
+  --paragraph-font: "Georgia", Times;
+  --link-font: "Verdana", Geneva, sans-serif;
+}
+
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--primarytxt-color);
+}
+h1 {
+  font-size: 24px;
+}
+h2 {
+  font-size: 22px;
+}
+h3{
+  font-size: 16px;
+}
+
+header h1 {
+  color:white;
+}
+
+
+img {
+  border-radius: 25px 25px;
+}
+
+.infotxt {
+  color:var(--infotxt-color);
+}
+
+header, main, nav {
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+body{
+  background-color: var(--bodybackground-color);
+}
+
+/* HEADER BUILD */
+header {
+  background-color: var(--primaryblocks-color);
+  color:var(--secondarytxt-color);
+}
+
+
+
+header h1 {
+  text-align: center;
+  padding: 3%;
+
+}
+
+header img {
+  width: 100%;
+}
+
+/* Nav links  */
+
+nav {
+  background-color: var(--secondaryblocks-color);
+  font-size: 1rem;
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.primarynavbar {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+}
+
+.primarynavbar li:first-child {
+  display: block;
+}
+
+.primarynavbar li {
+  display: none;
+}
+
+.primarynavbar a {
+  display: block; 
+  color: #000000;
+  padding: .75rem;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5em;
+}
+
+.primarynavbar .activepage {
+  color:var(--infotxt-color);
+  font-weight: bold;
+  /* background-color: var(--primaryblocks-color);*/
+}
+
+.primarynavbar a:hover {
+  color: var(--secondaryblocks-color);
+  background-color: var(--primarytxt-color);
+}
+
+/* for small and medium views */
+.dropdownnavbar li { 
+  display: block; 
+}
+
+
+
+
+/* FOOTER Sections */
+
+footer {
+  margin: 0 auto;
+  padding: 1%;
+}
+
+.contactinfo {
+  background-color: var(--secondaryblocks-color);
+  padding: 1%;
+  margin: 0 auto;
+  max-width: 375px;
+  text-align: center;
+  padding: 10px;
+
+}
+
+
+.basefooter {
+  background-color: var(--primaryblocks-color);
+  color:var(--secondarytxt-color);
+  padding: 1%;
+  margin: 0 auto;
+  max-width: 375px;
+  padding: 10px;
+}
+
+.basefooter a{
+  color:var(--secondarytxt-color);
+}
+
+.tiafooternamelogo img{
+  display: none;
+}
+
+/*Main page index.html*/
+
+
+/* for header comments */
+.ourgoal {
+  font-size: 1.5rem;
+  width: 89%;
+  text-align: center;
+  margin: 0 auto;
+  background-color: var(--infoblocks-color);
+  margin: 10px 0px;
+  padding: 20px;
+  border-radius: 25px;
+  color: var(--infotxt-color);
+}
+
+.midcomments{
+  font-size: 1.5rem;
+  width: 89%;
+  text-align: center;
+  margin: 0 auto;
+  background-color: var(--infoblocks-color);
+  margin: 10px 0px;
+  padding: 20px;
+  border-radius: 25px;
+  color: var(--infotxt-color);
+}
+
+
+.feature {
+  background-color: var(--infoblocks-color);
+}
+
+.feature img {
+  width: 100%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.featuretext {
+  padding: 20px;
+}
+
+
+.featuretext h3 {
+  font-size: 2rem;
+  text-align: center;
+}
+
+.featuretext h4 {
+  font-size: 1.5rem;
+}
+
+
+/*main page */
+
+
+
+.mainrepimg_rel{
+  position: relative;
+}
+.mainrecpimg {
+  margin-bottom: 2%;
+}
+
+.indexbutton:hover {
+  color: var(--secondaryblocks-color);
+  background-color: var(--primarytxt-color);
+}
+
+.indexbutton {
+  position: absolute;
+  text-align: center;
+  width: 93%;
+  top: 80%;
+  text-decoration: none;
+  padding: 9px;
+  border-radius: 15px;
+  border: 5px solid var(--infotxt-color);
+  background-color: var(--secondaryblocks-color);
+  color:var(--primarytxt-color);
+}
+
+
+.maingrid {
+  background-color:var(--infoblocks-color);
+  display: grid;
+  grid-template-columns: 1fr;
+
+}
+.maingrid .tempmonth{
+  grid-column: 1 / 2 ;
+  text-align: center;
+  font-weight: bolder;
+}
+.maingrid img {
+  padding: 0% 2%;
+  width: 96%;
+}
+
+.maingrid .featuretext h4 {
+  text-align: center; 
+  padding: 0%;
+  margin: 0%;
+}
+.maingrid picture {
+  grid-row: 2;
+
+}
+/* weather on main page */
+.weathergrid {
+  background-color:var(--infoblocks-color);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 0.1fr 1fr ;
+  text-align: center;
+  margin-top: 1%;
+}
+
+
+.testhead {
+  grid-column: 1/5;
+  grid-row: 2 ;
+}
+.maincurrentweather {
+  grid-column: 1 /5 ;
+  grid-row: 1 ;
+}
+.weatherclassdayname1 {
+  grid-row: 3;
+  grid-column: 2;
+
+}
+
+.weatherclassdayname2 {
+  grid-row: 3;
+  grid-column: 3;
+
+}
+.weatherclassdayname3 {
+  grid-row: 3;
+  grid-column: 4;
+
+}
+
+.weathergrid h4{
+  font-size:20px;
+
+}
+
+.main3dayweatherforecast {
+  border:0.1ch solid;
+}
+
+
+/* Temple Page */
+.templecards {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.templecards section{
+  text-align: center;
+  border-radius: 25px 25px;
+  background-color: var(--infoblocks-color);
+  color: var(--infotxt-color);
+  grid-template-columns: 1fr;
+  margin: 2px;
+}
+
+.templecards img {
+  width: 94%;
+}
+
+.templecards a {
+  color: var(--infotxt-color);
+}
+
+
+/*Services Page */
+
+
+.serviceimg {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 2%;
+}
+
+.serviceimg img {
+  width: 98%;
+}
+
+
+.serviceimg1, .serviceimg3 {
+  display: none;
+}
+.freeamenities {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+
+.freeamenities li {
+  text-align: left;
+  line-height: 2rem;
+}
+.freeamenities img{
+
+  width: 95%;
+  margin-top: 10%;
+
+}
+
+
+.specializedservices{
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.specializedservices li {
+  text-align: left;
+  line-height: 2rem;
+}
+
+.specializedservices img{
+  width: 95%;
+  margin-top: 10%;
+}
+
+.ssimages{
+  display: none;
+ 
+}
+
+
+
+.ssbuttons , .sssimages{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 1%;
+}
+
+
+.ssbutton1,.ssbutton2  {
+  width: 80%;
+  text-decoration: none;
+  padding: 9px;
+  border-radius: 15px;
+  text-align: center;
+  background-color: var(--secondaryblocks-color);
+  color: black;
+}
+
+.ssbutton1:hover , .ssbutton2:hover{
+  color: var(--secondaryblocks-color);
+  background-color: var(--primarytxt-color);
+}
+
+.sssimages1,.sssimages2 {
+  display: none;
+}
+
+
+/* Reservations page */
+.form {
+  padding: 1.5rem;
+}
+
+form label.reservationoption select{
+  display: block;
+  width: 100%;
+  padding: 2%;
+  border-radius: 5px;
+
+}
+form label.reservationinput input,textarea{
+  display: block;
+  width: 95.5%;
+  padding: 2%;
+  border-radius: 5px;
+}
+
+form label.top input {
+  display: block;
+  width: 100%;
+  padding: 2%;
+  border-radius: 10px;
+}
+
+form label {
+  display: block;
+  text-align: center;
+  padding: 1.5%;
+}
+
+.reservationbuttons {
+  padding: 2%;
+}
+
+.reservationbuttons:hover {
+  color: var(--secondaryblocks-color);
+  background-color: var(--primarytxt-color);
+}
+
+/* Thanks for your Reservations page */
+#resconfhankyou {
+  text-align: center;
+}
+
+
+/* Receptions Page */
+.receptionimg {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 2%;
+  margin-left: 0%;
+  width: 90%;
+}
+.receptionimg img {
+  width: 98%;
+}
+
+.receptionimg1 {
+  display: none;
+}
+
+.receptionimg3 {
+  display: none;
+}
+
+
+.receptionfood {
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 2%;
+  margin-left: 0%;
+  width: 90%;
+}
+.receptionfood img {
+  width: 98%;
+}
+.recpfoodheading {
+  grid-row: 1;
+  grid-column: 1/5;
+}
+
+.receptionfoodimg1 {
+display: none;
+}
+.receptionfoodimg2 {
+  display: grid;
+  }
+
+.receptioncake {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  margin: 2%;
+  margin-left: 0%;
+  width: 90%;
+}
+.receptioncake img {
+  width: 98%;
+}
+.recpheading {
+  grid-row: 1;
+  grid-column: 1/4;
+}
+
+.receptioncakeimg1 {
+  display: none;
+}
+.receptioncakeimg2 {
+  display: none;
+
+}
+.receptioncakeimg3 {
+  display: none;
+}
+.receptioncakeimg4 {
+  display: none;
+}
+.receptioncakeimg5 {
+display: none;
+}
+.receptioncakeimg6 {
+  grid-row: 3;
+
+}
+
+/* Extended Stay Options for SNR Missionaries */
+
+.Extendedstay {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  margin: 2%;
+  margin-left: 0%;
+  width: 90%;
+}
+.Extendedstay img {
+  width: 98%;
+}
+
+/* ALERT BANNER */
+#weatheralert {
+  display:block;
+  margin: 0 auto;
+  padding: 0%;
+  border: 1px solid var(--primary-boarder);
+  background-color: white;
+  border-radius: 25px;
+  width: 70%;
+  /*this keeps the text within the boarders*/
+  overflow: hidden;
+  margin-top: -1.1%;
+}
+
+#weatheralert h2 {
+  animation: none;
+  text-align: right;
+  color: red;
+}
+
+#closems {
+  background-color: white;
+}
+
+.walert {
+  display: flex;
+}
+
+
+
+#weatheralert button {
+  margin-left: 10%;
+}
