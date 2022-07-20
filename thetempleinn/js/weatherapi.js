@@ -31,23 +31,15 @@ function getDayName(dt)
     return date.toLocaleDateString(getDayName, { weekday: 'long' });    
 }
 
-
 fetch(url)
   .then((response) => response.json())
   .then((data) => {
     //console.log(data); 
 
-
     currentTemp.innerHTML = `<strong>${(data.current.temp).toFixed(2)}</strong>`;
     windspeed.innerHTML = `<strong>${data.current.wind_speed.toFixed(2)}</strong>`;
     Humidity.innerHTML = `<strong>${data.current.humidity.toFixed(2)}</strong>`;
-
-    /*
-    Hightemperature.innerHTML = `<strong>${(data.current.temp_max * 9/5 + 32).toFixed(2)}</strong>`;
-    Lowtemperature.innerHTML = `<strong>${(data.main.temp_min * 9/5 + 32).toFixed(2)}</strong>`;
-    'https://api.openweathermap.org/data/2.5/onecall?lat=-33.9258&lon=18.4232&exclude=hourly,minutely&units=Metric&appid=c19f1da1cd37c68484ca5bb501e2b781';
-*/
-    
+ 
     const iconsrc = `https://openweathermap.org/img/w/${data.current.weather[0].icon}.png`;
     const desc = data.current.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
@@ -66,7 +58,6 @@ fetch(url)
     Hightemperature1.innerHTML = `<strong>${(data.daily[0].temp.max).toFixed(2)}</strong>`;
     Lowtemperature1.innerHTML = `<strong>${(data.daily[0].temp.min).toFixed(2)}</strong>`;
     descday1.textContent = desc1;
-
 
 
     let weatherdayname2 = getDayName(data.daily[1].dt);
@@ -89,14 +80,6 @@ fetch(url)
     Hightemperature3.innerHTML = `<strong>${(data.daily[2].temp.max).toFixed(2)}</strong>`;
     Lowtemperature3.innerHTML = `<strong>${(data.daily[2].temp.min).toFixed(2)}</strong>`;
     descday3.textContent = desc3;
-
-
-
-
-
-
-
-
     
   });
 

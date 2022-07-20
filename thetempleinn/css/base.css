@@ -590,12 +590,12 @@ display: none;
   width: 70%;
   /*this keeps the text within the boarders*/
   overflow: hidden;
-  margin-top: -1.1%;
+
 }
 
 #weatheralert h2 {
   animation: none;
-  text-align: right;
+  text-align: center;
   color: red;
 }
 
