@@ -63,8 +63,86 @@ function displayTempleCards(data) {
 
 
     cards.append(card) // appends everything to the .card as declared at the top
+
+
     
+
+
   })
+
+  const Praialiked = window.localStorage.getItem("Praia Cape Verde Temple");
+  if (Praialiked == "LIKED 👍👍") {
+    document.getElementById("Praia Cape Verde Temple").innerHTML= "LIKED 👍👍"
+  }
+
+  document.getElementById('Praia Cape Verde Temple').addEventListener('click', function() {
+    const Praialiked = window.localStorage.getItem("Praia Cape Verde Temple");
+    if (Praialiked == "LIKED 👍👍") {
+      window.localStorage.setItem('Praia Cape Verde Temple', "👍 Like");
+      document.getElementById("Praia Cape Verde Temple").innerHTML= "👍 Like"
+    }
+    else{
+      window.localStorage.setItem('Praia Cape Verde Temple', "LIKED 👍👍");
+      document.getElementById("Praia Cape Verde Temple").innerHTML= "LIKED 👍👍"
+    }
+
+
+  }); 
+  
+
+  const Yigoliked = window.localStorage.getItem("Yigo Guam Temple");
+  if (Yigoliked == "LIKED 👍👍") {
+    document.getElementById("Yigo Guam Temple").innerHTML= "LIKED 👍👍"
+  }
+
+  document.getElementById('Yigo Guam Temple').addEventListener('click', function() {
+    const Yigoliked = window.localStorage.getItem("Yigo Guam Temple");
+    if (Yigoliked == "LIKED 👍👍") {
+      window.localStorage.setItem('Yigo Guam Temple', "👍 Like");
+      document.getElementById("Yigo Guam Temple").innerHTML= "👍 Like"
+    }
+    else{
+      window.localStorage.setItem('Yigo Guam Temple', "LIKED 👍👍");
+      document.getElementById("Yigo Guam Temple").innerHTML= "LIKED 👍👍"
+    }
+  }); 
+
+
+  const Rioliked = window.localStorage.getItem("Rio de Janeiro Brazil Temple");
+  if (Rioliked == "LIKED 👍👍") {
+    document.getElementById("Rio de Janeiro Brazil Temple").innerHTML= "LIKED 👍👍"
+  }
+
+  document.getElementById('Rio de Janeiro Brazil Temple').addEventListener('click', function() {
+    const Rioliked = window.localStorage.getItem("Rio de Janeiro Brazil Temple");
+    if (Rioliked == "LIKED 👍👍") {
+      window.localStorage.setItem('Rio de Janeiro Brazil Temple', "👍 Like");
+      document.getElementById("Rio de Janeiro Brazil Temple").innerHTML= "👍 Like"
+    }
+    else{
+      window.localStorage.setItem('Rio de Janeiro Brazil Temple', "LIKED 👍👍");
+      document.getElementById("Rio de Janeiro Brazil Temple").innerHTML= "LIKED 👍👍"
+    }
+  }); 
+
+
+  const Pocatelloliked = window.localStorage.getItem("Pocatello Idaho Temple");
+  if (Pocatelloliked == "LIKED 👍👍") {
+    document.getElementById("Pocatello Idaho Temple").innerHTML= "LIKED 👍👍"
+  }
+
+  document.getElementById('Pocatello Idaho Temple').addEventListener('click', function() {
+    const Pocatelloliked = window.localStorage.getItem("Pocatello Idaho Temple");
+    if (Pocatelloliked == "LIKED 👍👍") {
+      window.localStorage.setItem('Pocatello Idaho Temple', "👍 Like");
+      document.getElementById("Pocatello Idaho Temple").innerHTML= "👍 Like"
+    }
+    else{
+      window.localStorage.setItem('Pocatello Idaho Temple', "LIKED 👍👍");
+      document.getElementById("Pocatello Idaho Temple").innerHTML= "LIKED 👍👍"
+    }
+  }); 
+
 
 
 }
